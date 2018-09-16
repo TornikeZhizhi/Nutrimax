@@ -1,0 +1,346 @@
+
+.row:after, .row:before {
+	content: unset;
+}
+
+.right_fixed_icons {
+	position: fixed;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	background-color: rgba(255,255,255,.7);
+	width: 50px;
+	height: 90px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-left: 2px solid  #cbce2c;
+
+		a {
+			display: block;
+
+				img {
+					width: 30px;
+				}
+		}
+}
+
+.home_main_fluid {
+
+	background-image: radial-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)) ,url("../images/nutrimax.jpg");
+	background-position:top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 700px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+
+	.home_tittle_box {
+
+		border-right: 3px solid  #cbce2c;
+		padding: 5px 10px;
+
+		h1 {
+			color: #fff;
+			font-size: 35px;
+
+		}
+
+		a {
+			display: block;
+			font-size: 14px;
+			color: #fff;
+			text-align: right;
+
+		}
+	}
+}
+
+
+.home_products_fluid {
+
+	padding: 30px 15px;
+
+		.products_tittle {
+
+			border-left: 3px solid  #cbce2c;
+			padding: 0 5px;
+
+			h2 {
+				color: brown;
+				font-size: 20px;
+			}
+		}
+
+
+
+		.home_product_container {
+
+			    width: 80%;
+   				margin: 0 auto;
+   				padding: 50px 0;
+
+
+   				.col-md-3 {
+   					padding-left: 5px;
+   					padding-right: 5px;
+   				}
+			
+
+			.products_content {
+
+				margin-bottom: 10px;
+
+
+
+				a {
+					display: block;
+					width: 100%;
+					height: 255px;
+					padding-top: 30px;
+					padding-bottom: 50px;
+					background-color: yellow;
+					display: flex;
+					justify-content: space-between;
+					flex-direction: column;
+					align-items: center;
+					transition: all .4s;
+
+					&:hover{
+
+						background-color:red;
+					}
+
+					&:hover img {
+
+						    filter: brightness(0) invert(1);
+					}
+
+					h3 {
+						color: grey;
+					}
+
+
+					img {
+						width: 100px;
+						transition: all .4s;
+					}
+
+			}
+		}
+
+		}
+
+}
+
+
+
+
+.home_services_fluid {
+
+	background-image: radial-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)) ,url("../images/photo-1533241242276-46a506b40d66.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	.home_services_tittle_container {
+
+			.laboratory_tittle{
+
+				padding: 35px;
+
+				 h2 {
+				 	font-size: 20px;
+				 	color:yellow;
+				 }
+			}
+
+
+			.farmers_tittle {
+
+				border: 1px solid #fff;
+				border-top: none;
+				padding: 35px;
+
+				 h2 {
+				 	font-size: 20px;
+				 	color:yellow;
+				 }
+			}
+	}
+
+
+
+	.home_services_content_container {
+
+		.services_tittle {
+
+			border-left: 1px solid yellow;
+			padding: 5px 5px;
+			margin: 40px 0;
+
+			h3 {
+				font-size: 20px;
+				color: #fff;
+			}
+		}
+
+
+		.laboratory_content {
+
+			border-left: 1px solid #fff;
+			padding: 0 10px;
+			margin: 70px 0;
+
+			p {
+				color: #fff;
+				font-size: 14px;
+			}
+
+
+			a {
+				display: inline-block;
+				color: yellow;
+			}
+		}
+
+	}
+
+}
+
+
+
+.home_news_fluid {
+	padding: 30px 30px;
+	background-color: antiquewhite;
+
+		.home_news_tittle {
+			padding: 0px 5px;
+			border-left: 1px solid yellow;
+
+
+			h2 {
+				color: brown;
+				font-size: 16px;
+			}
+		}
+
+
+
+		.home_news_container {
+
+			max-width: 1376px;
+			    margin-top: 40px;
+
+			    .owl-nav {
+			    	display: flex;
+			    	justify-content: center;
+			    	align-items: center;
+			    	padding: 25px 0px;
+
+			    	button {
+			    		width: 20px;
+			    		height: 20px;
+			    		border:1px solid #000;
+			    		outline: none;
+			    		background-position: center;
+    					background-size: cover;
+
+    						&.owl-prev {
+    							background-image: url("../images/arrow.png");
+    							margin-right: 10px;
+    						}
+
+    						&.owl-next {
+    							background-image: url("../images/arrow.png");
+    						}
+
+			    		span {
+			    			display: none;
+			    		}
+			    	}
+			    }
+
+			    .owl-dots {
+			    	display: none;
+			    }
+
+			.news_box {
+				display: flex;
+
+
+				.news_img_box {
+					width: 50%;
+				}
+
+				.news_info_box {
+					width: 50%;
+					padding: 40px 15px 15px;
+
+					a {
+						font-size: 12px;
+						text-align: right;
+						color: #000;
+						display: block;
+						font-weight: bold;
+					}
+
+					.news_info_text {
+						height: 90%;
+    					display: flex;
+    					flex-direction: column;
+    					justify-content: flex-start;
+
+						h3 {
+							color: #000;
+							font-size: 17px;
+							font-weight: bold;
+    						text-align: center;
+						}
+
+						p {
+							color: #000;
+							font-size: 12px;
+							margin-top: 20px;
+
+						}
+
+					}
+
+					
+
+
+				}
+			}
+
+		}
+
+}
+
+
+
+
+
+.home_partner_fluid {
+
+	padding: 50px 30px;
+
+		.home_partner_container {
+			max-width: 800px;
+			margin-top: 60px;
+		}
+
+	.home_partners_tittle {
+
+			border-left: 1px solid yellow;
+			padding: 0 10px;
+
+			h2 {
+
+				font-size: 16px;
+				color: #000;
+			}
+	}	
+}
