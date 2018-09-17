@@ -85,11 +85,16 @@
 					    height: 30px;
 					    background-image: url(../images/send_btn.png);
 					    background-size: 12% 68%;
-					    background-position: right center;
+					    background-position: 97% center;
 					    background-repeat: no-repeat;
 					    padding: 5px 5px;
-					    border: 2px solid #000;
+					    border: 2px solid #fff;
 					    font-family: 'Conv_bpg_nino_mtavruli_normal';
+					    transition:all .4s;
+
+					    	&:hover {
+					    		background-position: 85% center;
+					    	}
 					}
 				}
 
