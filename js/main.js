@@ -40,3 +40,43 @@ $('.partners_slide').owlCarousel({
 
 })
 
+
+
+// Home Services
+
+
+$(document).ready(function(){
+
+    $(".laboratory_tittle").on("click",function(){
+
+        $(".farmers_tittle").removeClass("active")
+        $(this).addClass("active");
+
+        $(".farmers_cont").removeClass("deactive active");
+        $(".lab_cont").removeClass("active deactive");
+
+        $(".lab_cont").addClass("active");
+        $(".farmers_cont").addClass("deactive");
+        
+
+    });
+
+
+    $(".farmers_tittle ").on("click",function(){
+
+        $(".laboratory_tittle").removeClass("active")
+        $(this).addClass("active");
+
+        $(".farmers_cont").removeClass("deactive active");
+        $(".lab_cont").removeClass("active deactive")
+
+        $(".lab_cont").addClass("deactive");
+        $(".farmers_cont").addClass("active");
+
+    });
+
+
+
+
+
+})

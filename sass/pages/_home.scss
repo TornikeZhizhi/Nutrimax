@@ -10,50 +10,57 @@
 	transform: translateY(-50%);
 	background-color: rgba(255,255,255,.7);
 	width: 50px;
-	height: 90px;
+	height:100px;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
 	align-items: center;
-	border-left: 2px solid  #cbce2c;
+	border-left: 2px solid  #F5C400;
+	z-index: 1;
 
 		a {
 			display: block;
 
 				img {
-					width: 30px;
+					width: 25px;
 				}
 		}
 }
 
 .home_main_fluid {
 
-	background-image: radial-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)) ,url("../images/nutrimax.jpg");
+	background-image: radial-gradient(rgba(141,106,41,.5),rgba(141,106,41,.5)) ,url("../images/nutrimax.jpg");
 	background-position:top;
 	background-size: cover;
 	background-repeat: no-repeat;
-	min-height: 700px;
+	height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	position: relative;
 
 
 	.home_tittle_box {
 
-		border-right: 3px solid  #cbce2c;
+		border-right: 3px solid  #F5C400;
 		padding: 5px 10px;
 
 		h1 {
 			color: #fff;
 			font-size: 35px;
+			text-align: right;
+			font-size: 62px;
+    		font-family: 'Conv_gl-gordeziani-medium';
 
 		}
 
 		a {
 			display: block;
-			font-size: 14px;
+			font-size: 26px;
 			color: #fff;
 			text-align: right;
-
+			font-family: 'Conv_gl-gordeziani-medium';
+			
 		}
 	}
 }
@@ -65,12 +72,16 @@
 
 		.products_tittle {
 
-			border-left: 3px solid  #cbce2c;
+			border-left: 3px solid  #F5C400;
 			padding: 0 5px;
+			background-image: url(../images/tittle_bord.png);
+    		background-repeat: no-repeat;
+    		background-position: right bottom;
 
 			h2 {
-				color: brown;
-				font-size: 20px;
+				color: #493728;
+				font-size: 40px;
+				font-family: 'Conv_gl-gordeziani-medium';
 			}
 		}
 
@@ -81,6 +92,8 @@
 			    width: 80%;
    				margin: 0 auto;
    				padding: 50px 0;
+   				max-width: 1378px;
+
 
 
    				.col-md-3 {
@@ -92,26 +105,38 @@
 			.products_content {
 
 				margin-bottom: 10px;
+   				box-shadow: 0px 0px 3px 0px #000;
+
+
+
 
 
 
 				a {
+
+					font-family: 'Conv_gl-gordeziani-medium';
 					display: block;
 					width: 100%;
-					height: 255px;
+					min-height: 342px;
 					padding-top: 30px;
 					padding-bottom: 50px;
-					background-color: yellow;
+					background-color: #fff;
 					display: flex;
 					justify-content: space-between;
 					flex-direction: column;
 					align-items: center;
 					transition: all .4s;
 
+
 					&:hover{
 
-						background-color:red;
+						background-color:#F5C400;
 					}
+					
+					&:hover h3 {
+						
+						color:#fff;
+					}	
 
 					&:hover img {
 
@@ -119,13 +144,15 @@
 					}
 
 					h3 {
-						color: grey;
+						color: #493728;
+						 font-size: 30px;
 					}
 
 
 					img {
-						width: 100px;
-						transition: all .4s;
+						
+						transition: all .2s;
+						    max-width: 140px;
 					}
 
 			}
@@ -140,33 +167,53 @@
 
 .home_services_fluid {
 
-	background-image: radial-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)) ,url("../images/photo-1533241242276-46a506b40d66.jpg");
+	background-image: radial-gradient(rgba(18, 19, 35, .8), rgba(18, 19, 35 , .8)) ,url("../images/service-bg.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
+	padding-bottom: 80px;
 
 	.home_services_tittle_container {
 
 			.laboratory_tittle{
 
+				border: 1px solid transparent;
+				transition: .4s;
+
+				&.active {
+					border-color: #fff;
+				}
+
 				padding: 35px;
+				cursor: pointer;
 
 				 h2 {
-				 	font-size: 20px;
-				 	color:yellow;
+				 	    font-size: 30px;
+				 	color:#F5C400;
+				 	font-family: 'Conv_gl-gordeziani-medium';
 				 }
 			}
 
 
 			.farmers_tittle {
 
-				border: 1px solid #fff;
+				border: 1px solid transparent;
+				transition: .4s;
+
+				&.active {
+				
+					border-color: #fff;
+				}
+
+				
 				border-top: none;
 				padding: 35px;
+				cursor: pointer;
 
 				 h2 {
-				 	font-size: 20px;
-				 	color:yellow;
+				 	font-size: 30px;
+				 	color:#F5C400;
+				 	font-family: 'Conv_gl-gordeziani-medium';
 				 }
 			}
 	}
@@ -174,16 +221,35 @@
 
 
 	.home_services_content_container {
+			
+			animation:serviceAnime .7s;
+
+
+		&.farmers_cont {
+			display: none
+		}
+
+		&.active{
+			display: block;
+		}
+		
+		&.deactive{
+			display: none;
+		}	
 
 		.services_tittle {
 
-			border-left: 1px solid yellow;
-			padding: 5px 5px;
-			margin: 40px 0;
+			border-left: 2px solid #F5C400;
+			padding: 0px 5px;
+			margin: 55px 0;
+			background-image: url(../images/tittle_bord.png);
+    		background-repeat: no-repeat;
+    		background-position: right bottom;
 
 			h3 {
-				font-size: 20px;
+				font-size: 40px;
 				color: #fff;
+				font-family: 'Conv_gl-gordeziani-medium';
 			}
 		}
 
@@ -197,12 +263,16 @@
 			p {
 				color: #fff;
 				font-size: 14px;
+				font-family: 'Conv_bpg_mrgvlovani_2009';
+
+
 			}
 
 
 			a {
 				display: inline-block;
-				color: yellow;
+				color: #F5C400;
+				font-family: 'Conv_gl-gordeziani-medium';
 			}
 		}
 
@@ -214,16 +284,20 @@
 
 .home_news_fluid {
 	padding: 30px 30px;
-	background-color: antiquewhite;
+	background-color: #dfdbd2;
 
 		.home_news_tittle {
 			padding: 0px 5px;
-			border-left: 1px solid yellow;
+			border-left: 2px solid #F5C400;
+			background-image: url(../images/tittle_bord.png);
+    		background-repeat: no-repeat;
+    		background-position: right bottom;
 
 
 			h2 {
-				color: brown;
-				font-size: 16px;
+				color: #493728;
+    			font-size: 40px;
+    			font-family: 'Conv_gl-gordeziani-medium';
 			}
 		}
 
@@ -231,8 +305,8 @@
 
 		.home_news_container {
 
-			max-width: 1376px;
-			    margin-top: 40px;
+			max-width: 1476px;
+			margin-top: 50px;
 
 			    .owl-nav {
 			    	display: flex;
@@ -241,20 +315,20 @@
 			    	padding: 25px 0px;
 
 			    	button {
-			    		width: 20px;
-			    		height: 20px;
+			    		width: 30px;
+			    		height: 30px;
 			    		border:1px solid #000;
 			    		outline: none;
 			    		background-position: center;
     					background-size: cover;
 
     						&.owl-prev {
-    							background-image: url("../images/arrow.png");
+    							background-image: url("../images/arrow_left.png");
     							margin-right: 10px;
     						}
 
     						&.owl-next {
-    							background-image: url("../images/arrow.png");
+    							background-image: url("../images/arrow_right.png");
     						}
 
 			    		span {
@@ -273,6 +347,17 @@
 
 				.news_img_box {
 					width: 50%;
+					max-height: 355px;
+
+					a {
+						display: block;
+
+							img {
+								width: 100%;
+								height: 100%;
+								background-size: cover;
+							}
+					}
 				}
 
 				.news_info_box {
@@ -280,11 +365,11 @@
 					padding: 40px 15px 15px;
 
 					a {
-						font-size: 12px;
+						font-size: 16px;
 						text-align: right;
 						color: #000;
 						display: block;
-						font-weight: bold;
+						font-family: 'Conv_gl-gordeziani-medium';
 					}
 
 					.news_info_text {
@@ -295,15 +380,17 @@
 
 						h3 {
 							color: #000;
-							font-size: 17px;
-							font-weight: bold;
+							font-size: 24px;
     						text-align: center;
+    						font-family: 'Conv_gl-gordeziani-medium';
 						}
 
 						p {
 							color: #000;
-							font-size: 12px;
+							font-size: 13px;
 							margin-top: 20px;
+							font-family: 'Conv_bpg_mrgvlovani_2009';
+
 
 						}
 
@@ -328,19 +415,36 @@
 	padding: 50px 30px;
 
 		.home_partner_container {
-			max-width: 800px;
+			max-width: 1000px;
 			margin-top: 60px;
 		}
 
 	.home_partners_tittle {
 
-			border-left: 1px solid yellow;
-			padding: 0 10px;
+			border-left: 2px solid #F5C400;
+			padding: 0 5px;
+			background-image: url(../images/tittle_bord.png);
+    		background-repeat: no-repeat;
+    		background-position: right bottom;
 
 			h2 {
 
-				font-size: 16px;
-				color: #000;
+				font-size: 40px;
+				    color: #493728;
+				font-family: 'Conv_gl-gordeziani-medium';
 			}
 	}	
+}
+
+
+
+@keyframes serviceAnime {
+	
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }

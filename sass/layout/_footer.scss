@@ -2,21 +2,21 @@
 
 .footer_fluid {
 
-	background-color: #ccc;
-	padding-top: 40px;
+	    background-color: #493728;
+	padding-top: 50px;
 
 		.copyright_box {
 			span {
 				color: #fff;
-				font-weight: bold;
-				font-size: 10px;
+				font-size: 14px;
+				font-family: 'Conv_bpg_nino_mtavruli_normal';
 			}
 		}
 
 
 		.footer_container {
 			max-width: 1376px;
-			 padding-top: 30px;
+			 padding-top: 40px;
 
 
 			 .footer_bot_row {
@@ -45,9 +45,12 @@
 
 
 			 	span:last-child{
-			 		
-			 		color: red;
-			 		font-size: 12px;			 	}
+			 			
+			 		color: #fff;
+    				font-size: 15px;
+    				padding-left: 10px;
+    				font-family: 'Conv_bpg_nino_mtavruli_normal';
+			 				 	}
 			 }
 
 
@@ -55,10 +58,12 @@
 					height: 100%;
 				    display: flex;
 				    align-items: center;
+				    max-width: 90px;
+    				justify-content: space-between;
 					
 					a {
 						img {
-							width: 30px;
+							width: 25px;
 						}
 					}
 				}
@@ -67,22 +72,24 @@
 				.footer_mail_box {
 					span {
 						display: block;
-						font-size: 13px;
+						font-size: 16px;
 						color: #fff;
+						font-family: 'Conv_bpg_nino_mtavruli_normal';
 					}
 
 					a {
 						color: #fff;
-					    font-size: 12px;
+					    font-size: 14px;
 					    display: block;
 					    width: 180px;
 					    height: 30px;
-					    background-image: url(../images/pig.png);
-					    background-size: 18% 60%;
+					    background-image: url(../images/send_btn.png);
+					    background-size: 12% 68%;
 					    background-position: right center;
 					    background-repeat: no-repeat;
-					    padding: 2px;
+					    padding: 5px 5px;
 					    border: 2px solid #000;
+					    font-family: 'Conv_bpg_nino_mtavruli_normal';
 					}
 				}
 
@@ -94,8 +101,9 @@
    					 align-items: center;
 
 					a {
-						font-size: 14px;
+						font-size: 17px;
 						color: #fff;
+						font-family: 'Conv_bpg_nino_mtavruli_normal';
 						
 						&:not(:last-child){
 							padding-right: 20px;
@@ -109,7 +117,7 @@
 								right: 8px;
 								width: 1px;
 								height: 100%;
-								background-color: #000;
+								background-color: #fff;
 							}
 
 
