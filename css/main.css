@@ -157,6 +157,9 @@ a:hover {
         border-bottom: none;
         padding: 3px;
         height: 40px; }
+        .footer_fluid .footer_container .footer_address_box span:first-child img {
+          width: 18px;
+          object-fit: scale-down; }
       .footer_fluid .footer_container .footer_address_box span:last-child {
         color: #fff;
         font-size: 15px;
@@ -324,24 +327,28 @@ a:hover {
   padding-bottom: 80px;
   overflow: hidden; }
   .home_services_fluid .home_services_tittle_container .laboratory_tittle {
-    border: 1px solid transparent;
+    border: 7px solid transparent;
+    border-top: none;
+    border-radius: 50%;
     transition: .4s;
     padding: 35px;
     cursor: pointer; }
     .home_services_fluid .home_services_tittle_container .laboratory_tittle.active {
-      border-color: #fff; }
+      border-color: #F5C400; }
     .home_services_fluid .home_services_tittle_container .laboratory_tittle h2 {
       font-size: 30px;
       color: #F5C400;
       font-family: 'Conv_gl-gordeziani-medium'; }
   .home_services_fluid .home_services_tittle_container .farmers_tittle {
-    border: 1px solid transparent;
+    border: 7px solid transparent;
+    border-top: none;
+    border-radius: 50%;
     transition: .4s;
     border-top: none;
     padding: 35px;
     cursor: pointer; }
     .home_services_fluid .home_services_tittle_container .farmers_tittle.active {
-      border-color: #fff; }
+      border-color: #F5C400; }
     .home_services_fluid .home_services_tittle_container .farmers_tittle h2 {
       font-size: 30px;
       color: #F5C400;

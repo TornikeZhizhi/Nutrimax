@@ -188,11 +188,13 @@
 
 			.laboratory_tittle{
 
-				border: 1px solid transparent;
+				border: 7px solid transparent;
+				border-top: none;
+				border-radius: 50%;
 				transition: .4s;
 
 				&.active {
-					border-color: #fff;
+					border-color: #F5C400;
 				}
 
 				padding: 35px;
@@ -208,12 +210,14 @@
 
 			.farmers_tittle {
 
-				border: 1px solid transparent;
+				border: 7px solid transparent;
+				border-top: none;
+				border-radius: 50%;
 				transition: .4s;
 
 				&.active {
 				
-					border-color: #fff;
+					border-color: #F5C400;
 				}
 
 				
