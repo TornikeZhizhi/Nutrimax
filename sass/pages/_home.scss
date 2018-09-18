@@ -29,14 +29,15 @@
 
 .home_main_fluid {
 
-	background-image: radial-gradient(rgba(141,106,41,.5),rgba(141,106,41,.5)) ,url("../images/nutrimax.jpg");
+	background-image: radial-gradient(rgba(141,106,41,.3),rgba(141,106,41,.3)) ,url("../images/nutrimax.jpg");
 	background-position:top;
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 100vh;
+	height: 80vh;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
 	position: relative;
 
 
@@ -188,13 +189,12 @@
 
 			.laboratory_tittle{
 
-				border: 7px solid transparent;
+				border: 2px solid transparent;
 				border-top: none;
-				border-radius: 50%;
 				transition: .4s;
 
 				&.active {
-					border-color: #F5C400;
+					border-color: #fff;
 				}
 
 				padding: 35px;
@@ -210,14 +210,12 @@
 
 			.farmers_tittle {
 
-				border: 7px solid transparent;
-				border-top: none;
-				border-radius: 50%;
+				border: 2px solid transparent;
 				transition: .4s;
 
 				&.active {
 				
-					border-color: #F5C400;
+					border-color: #fff;
 				}
 
 				
@@ -377,14 +375,8 @@
 
 					a {
 						display: block;
-						overflow: hidden;
-						border-radius: 5px;
+						
 
-
-						&:hover img {
-							transform:scale(1.2);
-							filter: saturate(3);
-						}
 
 							img {
 								width: 100%;
@@ -570,3 +562,5 @@
     transform: translate3d(0, 0, 0);
   }
 }
+
+

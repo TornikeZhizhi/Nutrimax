@@ -1,0 +1,282 @@
+
+
+.for_about {
+	display: none !important;
+}
+
+.about_content_tabs_box {
+	position: fixed;
+	top: 50%;
+	right: 2%;
+	transform: translateY(-50%);
+	z-index: 1;
+
+		.about_content_tabs_tittle{
+
+			h4 {
+				color: #8D6A29;
+				font-size: 20px;
+				font-family: 'Conv_gl-gordeziani-medium';
+			}
+		}
+
+		.about_content_tabs {
+
+			&:not(:last-child){
+				margin-bottom: 30px;
+			}
+
+			a {
+				display: block;
+				text-align: center;
+					img {
+
+					}
+			}
+		}
+}
+
+
+.about_fluid {
+	
+
+	position: relative;
+	background-color: #DCD5D0;
+
+
+		.about_container {
+
+			max-width: 1455px;
+
+			& > .row:not(:first-child) {
+				padding: 250px 0;
+			}
+
+			.about_inside_about_row {
+				padding: 100px 0 !important;
+			}
+
+			.about_news_tittle {
+
+				display: flex;
+			    align-items: center;
+			    flex-direction: column;
+
+
+				 h3 {
+				 	color: #8C8934;
+				 	font-size: 51px;
+				 	font-family: 'Conv_gl-gordeziani-bold';
+
+				 }
+			}
+
+
+			.about_news_text {
+
+				border-left: 3px solid #8C8934;
+				    padding: 52px 25px;
+
+				 p {
+				 	font-size: 16px;
+				 	color: #000D20;
+				 	font-family: 'Conv_BPG_Tahoma_Glaho';
+				 }
+			}
+			
+
+			.about_quality_text {
+				
+				padding: 45px 20px;
+				border-right: 3px solid #F5C400;
+
+				p {
+					color: #000D20;
+					font-size: 16px;
+					font-family: 'Conv_BPG_Tahoma_Glaho';
+
+				}
+			}
+			
+
+
+			.about_qualiti_tittle {
+
+					display: flex;
+				    flex-direction: column;
+				    align-items: flex-start;
+				    justify-content: center;
+				    height: 100%;
+
+				 h3 {
+				 	color: #F5C400;
+				 	font-size: 47px;
+				 	font-family: 'Conv_gl-gordeziani-bold';
+
+				 }
+
+				 img {
+				 	padding-left: 50px;
+				 }
+			}
+
+
+
+			.about_knowhow_box {
+
+								display: flex;
+    			flex-direction: column;
+    			align-items: center;
+    			justify-content: flex-end;
+
+
+				h3 {
+					color: #8D6A29;
+					font-size: 51px;
+					font-family: 'Conv_gl-gordeziani-bold';
+
+				}
+			}
+
+
+			.about_knowhow_text {
+				border-left: 3px solid #8D6A29;
+				padding: 51px 26px;
+
+
+				p {
+					color: #000D20;
+					font-size: 16px;
+					font-family: 'Conv_BPG_Tahoma_Glaho';
+				}
+			}
+
+
+			.about_partners_box {
+
+				border-right: 3px solid #8C8934;
+				padding: 30px 0px;
+				
+
+
+
+
+				 p {
+				 	color: #000D20;
+				 	font-size: 16px;
+				 	font-family: 'Conv_BPG_Tahoma_Glaho';
+
+				 }
+			}
+
+
+			.about_partners_tittle {
+					
+					    display: flex;
+					    flex-direction: column;
+					    align-items: center;
+					    justify-content: center;
+					    height: 100%;
+
+
+				h3 {
+					font-size: 47px;
+					color: #8C8934;
+					font-family: 'Conv_gl-gordeziani-bold';
+				}
+			}
+
+
+
+			.about_inside_tittle {
+					text-align: center;
+    				display: flex;
+    				flex-direction: column;
+   				 	justify-content: center;
+   				 	align-items: center;
+    				height: 100%;
+
+
+					h3 {
+						color: #F5C400;
+						font-family: 'Conv_gl-gordeziani-bold';
+						font-size: 51px;
+					}
+			}
+			
+
+			.about_inside_about {
+					
+					border-left: 3px solid #F5C400;
+					padding: 15px 30px;
+
+				p {
+					font-size: 16px;
+					font-family: 'Conv_BPG_Tahoma_Glaho';
+					color: #000D20;
+
+					&:last-child {
+						margin-bottom:0px;
+					}
+
+				}
+
+				li {
+					font-size: 16px;
+					font-family: 'Conv_BPG_Tahoma_Glaho';
+					color: #000D20;
+
+					&:not(:last-child){
+						margin-bottom: 20px;
+					}
+				}
+			}
+
+			.about_tittle_row {
+
+				margin: 30px 0;
+			}
+
+			.about_tittle {
+
+				    border-left: 3px solid #F5C400;
+    				padding: 0 5px;
+    				background-image: url(../images/tittle_bord.png);
+    				background-repeat: no-repeat;
+    				background-position: right bottom;
+
+
+				h2 {
+					color: #493728;
+    				font-size: 40px;
+    				font-family: 'Conv_gl-gordeziani-medium';
+				}
+			}
+
+
+
+
+			.mission_box {
+				border-right: 3px solid #8C8934;
+				padding: 95px 20px;
+
+					p {
+						font-family: 'Conv_BPG_Tahoma_Glaho';
+						font-size: 16px;
+						color: #000D20;
+					}
+			}
+
+			.mission_img_box {
+					
+					text-align: center;
+
+				h3 {
+					font-size: 51px;
+					font-family: 'Conv_gl-gordeziani-bold';
+					color: #8C8934;
+				}
+			}
+
+		}
+}

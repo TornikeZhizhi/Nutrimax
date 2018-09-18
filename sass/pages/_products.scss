@@ -1,0 +1,295 @@
+
+
+
+.products_fluid {
+		
+
+	.products_container {
+
+				
+				max-width: 1600px;	
+	
+
+				.products_tittle {
+						
+						    border-left: 3px solid #F5C400;
+    						padding: 0 5px;
+    						background-image: url(../images/tittle_bord.png);
+   							background-repeat: no-repeat;
+   						 	background-position: right bottom;
+   						 	    margin: 70px;
+					
+
+
+					h2 {
+						color: #493728;
+    					font-size: 40px;
+    					font-family: 'Conv_gl-gordeziani-medium'
+					}
+				}
+
+
+
+		.main_products_row {
+			border-top: 1px solid #D1D3D4;
+
+					.animals_row {
+						    border-top: 1px solid #F5C400;
+						    position: relative;
+						      
+
+						    .pig_tittle {
+						    	position: absolute;
+						    	top: 0;
+						    	left: 50%;
+						    	transform: translateX(-50%);
+						    	z-index: 10;
+						    	background-color: #F5C400;
+						    	border-radius: 0 0 10px 10px;
+						    	padding: 8px 25px;
+
+						    			h2 {
+						    				color: #493728;
+						    				font-size: 18px;
+						    				font-family: 'Conv_bpg_mrgvlovani_2009';
+						    			}
+						    }
+					}
+
+
+			.main_products_menu_col {
+				border-right: 3px solid #D1D3D4;
+					
+
+					.animals_tab_panel {
+						
+						    padding: 30px 50px;
+
+						 label {
+						 	display: block;						
+						 	position: relative;
+						 	color: #493728;
+						 	font-size: 13px;
+						 	font-family: 'Conv_bpg_mrgvlovani_2009';
+
+						 	&:not(:last-child){
+
+						 		margin-bottom: 20px;
+						 	}
+
+					
+
+						 		input{
+						 			display: none;
+						 			background-color:tomato !important;
+						 		}
+								
+							/*	input:checked ~ .checkmark:after {
+									background-color: #F5C400 !important;
+									border: solid #F5C400 !important;
+								}*/
+
+								input:checked ~ .checkmark{
+									background-image: url("../images/chekbox.png");
+									border:1px solid #F5C400;
+								}
+
+						 
+
+						 	 span {
+						 	 	    position: absolute;
+								    top: 0;
+   									left: -28px;
+								    height: 15px;
+								    width: 15px;
+								    border:1px solid #493728;
+								    background-repeat: no-repeat;
+								    background-size: 70% 80%;
+								    background-position: center center;
+
+								    &:after{
+								    	   left: 9px;
+										    top: 5px;
+										    width: 5px;
+										    height: 10px;
+										    /*border: solid white;*/
+										    border-width: 0 3px 3px 0;
+										    -webkit-transform: rotate(45deg);
+										    -ms-transform: rotate(45deg);
+										    transform: rotate(45deg);
+										    content: "";
+										    position: absolute;
+								    }
+						 	 }
+						 }
+					}
+
+			}
+
+
+			.row_wrapper {
+
+					margin-bottom: 30px;
+					padding: 60px 45px;
+					border-bottom: 1px solid #D1D3D4;
+    				position: relative;
+									
+							.down_product_tittle {
+								position: absolute;
+								bottom: 0;
+								left: 50%;
+								transform: translateX(-50%);
+								z-index: 10;
+								border: 1px solid #493728;
+								border-bottom: none;
+								border-radius: 5px 5px 0px 0px;
+								width: 115px;
+								height:28px;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+
+								 	 h2 {
+								 	 	color: #493728;
+								 	 	font-size: 14px;
+								 	 	font-family: 'Conv_bpg_mrgvlovani_2009';
+								 	 }
+							}
+				
+				.product_content {
+					position: relative;
+
+					.new_box {
+    							position: absolute;
+    							top: 5%;
+    							left: 10%;
+    							z-index: 10;
+    						}
+
+
+    				
+
+					.product_box {
+						background-color: #F6F4F1;
+						padding: 15px;
+						display: flex;
+						flex-direction: column;
+    					align-items: center;
+    					justify-content: center;
+    					padding: 50px 25px 40px 25px;
+    					position: relative;
+
+
+    						&:hover .product_add_basket {
+    							display:flex;
+    						}
+    					
+								.product_add_basket {
+								    	position: absolute;
+								    	bottom: 0;
+								    	left: 0;
+								    	z-index: 10;
+								    	background-color: #493728;
+								    	width: 100%;
+								    	height: 27px;
+								    	display: none;
+
+								    		&>span, div {
+								    			width: 50%;
+												display: flex;
+											    align-items: center;
+											    justify-content: center;
+
+								    		}
+
+								    				img {
+								    					padding:0px;
+								    				}
+
+								    				.add_basket {
+
+
+								    					 span  {
+								    					 	color: 20px;
+								    					 	font-family: 'Conv_gl-gordeziani-medium';
+								    					 	color: #fff;
+								    					 	
+								    					 }
+								    				}
+
+								    		}
+
+    					
+
+							h3 {
+								color: #493728;
+								font-size: 13px;
+								font-family: 'Conv_bpg_mrgvlovani_2009';
+							}
+
+							img {
+								    padding: 20px 0;
+							}
+
+							.star_price_box {
+								width: 100%;
+							    display: flex;
+							    justify-content: space-between;
+							    align-items: center;
+									
+									div, span {
+										display: flex;
+										justify-content: center;
+										align-items: center;
+										width: 45%;
+										background-color: #fff;
+										height: 30px;
+										font-size: 20px;
+										color: #F5C400;
+
+											img {
+												padding:0;
+											}
+									}
+							}
+					}	
+				}
+
+			}
+
+
+			.producs_price_box {
+				width: 100%;
+			    display: flex;
+			    align-items: center;
+			    justify-content: flex-end;
+			        padding: 10px 95px;
+
+
+			    span {
+			    	color: #000000;
+			    	font-size: 13px;
+			    	font-family: 'Conv_bpg_mrgvlovani_2009';
+			    	    padding-right: 10px;
+
+			    }
+
+
+				select {
+					width: 125px;
+					height: 40px;
+					cursor: pointer;
+
+					option {
+						cursor: pointer;
+					}
+				}
+
+			}
+			
+
+		}
+
+	}
+
+}

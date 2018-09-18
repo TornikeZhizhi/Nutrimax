@@ -1,0 +1,177 @@
+
+
+.our_team_fluid {
+		
+		background-color: #E3DFD6; 
+	
+	 .our_team_container {
+
+
+	 	max-width: 1190px;
+	 	padding-bottom: 260px;
+		
+
+		.our_team_row {
+
+			&>.col-md-4, .col-md-7 {
+				padding-left: 4px;
+				padding-right: 4px;
+			}
+		}
+
+		.our_team_row {
+
+			&>.col-md-7 {
+				
+				
+			}
+		}
+
+	 		.our_team_tittle {
+
+	 				    border-left: 3px solid #F5C400;
+    					padding: 0 5px;
+   					 	background-image: url(../images/tittle_bord.png);
+    					background-repeat: no-repeat;
+   						background-position: right bottom;
+   						 margin: 70px 0;
+
+	 				h2 {
+							
+							color: #493728;
+    						font-size: 40px;
+    						font-family: 'Conv_gl-gordeziani-medium';
+	 				}
+	 		}
+
+		
+		.our_team_box_left {
+			display: flex;
+			height: 340px;
+			border:1px solid #D1D3D4;
+
+				&:not(:last-child){
+						margin-bottom: 10px;
+				}
+		
+
+			.our_team_img {
+				width: 50%;
+
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+			}
+
+
+			.our_team_info {
+				width: 50%;
+				font-family: 'Conv_bpg_mrgvlovani_2009';
+				padding: 40px 15px 15px 40px;
+
+
+				a {
+					display: flex;
+					justify-content: center;
+
+					span {
+						display: flex;
+    						align-items: flex-end;
+   						 padding-right: 5px;
+					}
+				}
+
+
+				 h3 {
+				 	color: #8C8934;
+				 	font-size: 14px;
+
+				 }
+
+				 p {
+				 	color: #000D20;
+				 	font-size: 16px;
+				 	font-family: 'Conv_BPG_Tahoma_Glaho';
+				 	margin-top: 25px;
+    				margin-bottom: 60px;
+				 }
+			}
+		}
+
+		
+		.our_team_box_right {
+			/*display: flex;
+			height: 340px;*/
+			border:1px solid #D1D3D4;
+			height: 100%;
+
+			.our_team_img {
+				width: 100%;
+				height: 50%;
+
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+			}
+
+
+			.our_team_info {
+				width: 100%;
+				height: 50%;
+				font-family: 'Conv_bpg_mrgvlovani_2009';
+				padding: 40px 15px 15px 40px;
+
+
+				a {
+					display: flex;
+					justify-content: center;
+
+					span {
+						display: flex;
+    						align-items: flex-end;
+   						 padding-right: 5px;
+					}
+				}
+
+
+				 h3 {
+				 	color: #8C8934;
+				 	font-size: 14px;
+
+				 }
+
+				 p {
+				 	color: #000D20;
+				 	font-size: 16px;
+				 	font-family: 'Conv_BPG_Tahoma_Glaho';
+				 	margin-top: 25px;
+    				margin-bottom: 60px;
+				 }
+			}
+		}
+
+
+		
+
+
+	 }
+
+}
+
+
+.footer_fluid {
+	position: relative;
+
+
+		.footer_flower_box {
+			position: absolute;
+			bottom: 99%;
+			right: 5%;
+			
+
+		}
+}

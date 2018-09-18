@@ -80,3 +80,41 @@ $(document).ready(function(){
 
 
 })
+
+
+// about slider
+
+$(document).ready(function() {
+
+  $('.about_content_tabs a').click(function(e) {
+
+    var targetHref = $(this).attr('href');
+
+    $('html, body').animate({
+        scrollTop: $(targetHref).offset().top
+    }, 500);
+    e.preventDefault();
+  });
+});
+
+
+
+// our team
+
+
+$(document).ready(function() {
+
+    
+
+    $(".our_team_info a span:first-child").mouseenter(function(){
+
+        $(this).find("img").attr("src","images/convert_yellow.png")
+    })
+
+    $(".our_team_info a span:first-child").mouseleave(function(){
+
+        $(this).find("img").attr("src","images/convert_grey.png")
+    })
+
+
+});
