@@ -833,6 +833,12 @@ a:hover {
           		background-color: #F5C400 !important;
           		border: solid #F5C400 !important;
           	}*/ }
+          .products_fluid .products_container .main_products_row .main_products_menu_col .animals_tab_panel label ul {
+            display: none; }
+            .products_fluid .products_container .main_products_row .main_products_menu_col .animals_tab_panel label ul li {
+              font-size: 12px;
+              font-family: 'Conv_bpg_mrgvlovani_2009';
+              color: #000; }
           .products_fluid .products_container .main_products_row .main_products_menu_col .animals_tab_panel label:not(:last-child) {
             margin-bottom: 20px; }
           .products_fluid .products_container .main_products_row .main_products_menu_col .animals_tab_panel label input {
@@ -841,6 +847,8 @@ a:hover {
           .products_fluid .products_container .main_products_row .main_products_menu_col .animals_tab_panel label input:checked ~ .checkmark {
             background-image: url("../images/chekbox.png");
             border: 1px solid #F5C400; }
+          .products_fluid .products_container .main_products_row .main_products_menu_col .animals_tab_panel label input:checked ~ ul {
+            display: block; }
           .products_fluid .products_container .main_products_row .main_products_menu_col .animals_tab_panel label span {
             position: absolute;
             top: 0;
@@ -963,5 +971,20 @@ a:hover {
         cursor: pointer; }
         .products_fluid .products_container .main_products_row .producs_price_box select option {
           cursor: pointer; }
+
+.products_inside_container .products_tittle {
+  border-left: 3px solid #F5C400;
+  padding: 0 5px;
+  background-image: url(../images/tittle_bord.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  margin: 70px; }
+  .products_inside_container .products_tittle h2 {
+    color: #493728;
+    font-size: 40px;
+    font-family: "Conv_gl-gordeziani-medium"; }
+.products_inside_container .food_content {
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000; }
 
 /*# sourceMappingURL=main.css.map */

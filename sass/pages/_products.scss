@@ -72,6 +72,20 @@
 						 	font-size: 13px;
 						 	font-family: 'Conv_bpg_mrgvlovani_2009';
 
+
+						 	ul {
+
+						 			display:none;
+
+						 		li {
+						 		font-size:12px;
+						 		font-family: 'Conv_bpg_mrgvlovani_2009';
+						 		color: #000;
+						 	}
+
+						 	}
+						 	
+
 						 	&:not(:last-child){
 
 						 		margin-bottom: 20px;
@@ -92,6 +106,10 @@
 								input:checked ~ .checkmark{
 									background-image: url("../images/chekbox.png");
 									border:1px solid #F5C400;
+								}
+
+								input:checked ~ ul{
+									display:block;
 								}
 
 						 
@@ -293,3 +311,40 @@
 	}
 
 }
+
+
+// products_inside
+
+.products_inside_container {
+
+		.products_tittle {
+						
+						    border-left: 3px solid #F5C400;
+    						padding: 0 5px;
+    						background-image: url(../images/tittle_bord.png);
+   							background-repeat: no-repeat;
+   						 	background-position: right bottom;
+   						 	    margin: 70px;
+					
+
+
+					h2 {
+						color: #493728;
+    					font-size: 40px;
+    					font-family: 'Conv_gl-gordeziani-medium'
+					}
+				}
+
+
+				.food_content {
+					border-right:1px solid #000;
+					border-bottom:1px solid #000;
+				
+				}
+
+
+
+
+
+}
+

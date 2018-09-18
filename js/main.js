@@ -87,9 +87,7 @@ $(document).ready(function(){
 $(document).ready(function() {
 
   $('.about_content_tabs a').click(function(e) {
-
     var targetHref = $(this).attr('href');
-
     $('html, body').animate({
         scrollTop: $(targetHref).offset().top
     }, 500);
@@ -117,4 +115,8 @@ $(document).ready(function() {
     })
 
 
+
+
 });
+
+
