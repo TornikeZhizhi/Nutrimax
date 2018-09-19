@@ -1,0 +1,92 @@
+
+
+.services_fluid {
+	background-image: url("../images/Asset 1.png");
+	height: 60vh;
+	background-position: center center;
+	background-size: cover;
+
+
+
+}
+
+
+  .service_fluid {
+	position: relative;
+	
+
+	&:after {
+		content:"";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-image: radial-gradient(rgba(255,255,255,.3),rgba(255,255,255,.3)) ,url("../images/service-bg.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center; 
+		z-index: -1;
+		 filter: blur(55px);
+	}
+
+	.service_container {
+	
+
+			.service_tittle {
+				text-align: center;
+	
+				margin-top: 70px;
+				margin-bottom: 40px;
+
+				 h2 {
+				 	color: #493728;
+				 	font-size: 28px;
+				 	font-family: 'Conv_gl-gordeziani-medium';
+				 }
+			}
+	}
+
+
+
+	.service_text_box {
+			
+			margin-bottom: 230px;
+
+		p {
+			font-family: 'Conv_BPG_Tahoma_Glaho';
+			font-size: 16px;
+			color: #000D20;
+			    margin-bottom: 25px;
+		}
+	}
+
+
+  	} 
+
+
+  .service_fix_icons {
+  	position: fixed;
+  	top: 50%;
+  	right: 5%;
+  	z-index: 10;
+		
+		.service_icon {
+			text-align: center;
+			margin-bottom: 20px;
+
+				img {
+					width: 70px;
+
+				}
+
+			 h2 {
+			 	color: #8D6A29;
+			 	font-size: 20px;
+			 	font-family: 'Conv_gl-gordeziani-medium';
+
+			 }
+		}
+
+  }	
+

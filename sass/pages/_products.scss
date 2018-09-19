@@ -317,6 +317,16 @@
 
 .products_inside_container {
 
+		max-width: 1400px;
+
+		.food_content_lft_row {
+			height: 100%;
+		}
+
+		.foot_content_box {
+			height: 100%;
+		}
+
 		.products_tittle {
 						
 						    border-left: 3px solid #F5C400;
@@ -344,7 +354,215 @@
 
 
 
+		.inside_product_info {
+			padding: 30px 20px;
 
+				.inside_product_tittle_rating {
+					    margin-bottom: 40px;
+
+					 h2 {
+					 	color: #493728;
+					 	font-size: 16px;
+					 	font-family: 'Conv_bpg_mrgvlovani_2009';
+					 }
+
+					 span {
+					 	display: block;
+					 	color: #F5C400;
+					 	font-size: 37px;
+					 	padding-left: 3px;
+
+					 }
+
+					 img {
+					 	padding-top: 30px;
+					 	padding-bottom: 15px;
+					 }
+					}
+				}
+
+
+			.inside_product_information {
+
+				  h3 {
+				  	color: #493728;
+				  	font-size: 16px;
+					font-family: 'Conv_bpg_mrgvlovani_2009';
+				  }
+
+				  p {
+				  	color: #000D20;
+				  	font-size: 16px;
+				  	font-family: 'Conv_BPG_Tahoma_Glaho';
+				  	margin-top: 30px;
+    				margin-bottom: 45px;
+				  }
+
+
+				  a {
+				  	display: inline-block;
+				  	background-color: #23170E;
+				  	color: #fff;
+				  	padding: 7px 15px;
+				  	font-family: 'Conv_bpg_mrgvlovani_2009';
+				  	font-size: 18px;
+				  	border-radius: 5px;
+				  }
+			}
+
+
+
+
+	
 
 }
 
+.products_main_info_container {
+			max-width: 1645px;
+			margin-top: 140px;
+
+			.products_main_info_tabs {
+
+				border-bottom: 1px solid #D1D3D4;
+				display: flex;
+			    justify-content: space-between;
+			    align-items: center;
+			        padding: 10px 46px;
+
+
+				.tabs_info {
+
+					 h4 {
+
+					 	color: #493728;
+					 	font-size: 18px;
+					 	font-family: 'Conv_bpg_mrgvlovani_2009';
+					 }
+				}
+
+			}
+
+		.products_main_info_row {
+			    padding: 45px 45px;
+		}
+	
+
+			.prduct_main_info_up {
+
+					li {
+
+						font-size: 16px;
+						color: #000D20;
+						font-family: 'Conv_bpg_mrgvlovani_2009';
+
+
+						&:not(:last-child){
+
+							margin-bottom: 20px;	
+						}
+						span {
+							color: #F5C400;
+							font-size: 16px;
+						}
+
+					}
+			}
+
+
+			.product_main_info_down {
+
+				margin-top: 40px;
+
+				p {
+					font-size: 16px;
+						color: #000D20;
+						font-family: 'Conv_bpg_mrgvlovani_2009';
+						margin-bottom: 0px;
+				}
+
+
+				li {
+					font-size: 16px;
+						color: #000D20;
+						font-family: 'Conv_bpg_mrgvlovani_2009';
+
+
+						span {
+							color: #F5C400;
+							font-size: 16px;
+						}
+				}
+
+			}
+
+			.main_info_tables {
+				   
+
+				    .table_header {
+				    	background-color: #23170E;
+				    padding: 12px;
+				    text-align: center;
+				    border-radius: 3px;
+				    cursor: pointer;
+
+										h4 {
+										color: #fff;
+										font-family: 'Conv_bpg_mrgvlovani_2009';
+										font-size: 16px;
+
+									}
+
+				    }
+
+
+
+				   .table_box {
+				   	display: flex;
+				   	justify-content: space-between;
+				   	    width: 90%;
+    					margin: 20px auto;
+
+				   				.table_content {
+				   					width: 33.333%;
+
+				   					.food_tittle {
+				   						text-align: center;
+   										 padding: 7px;
+   										 border: 1px solid #404041;
+   										 border-bottom: none;
+
+				   						h5 {
+				   							color: #404041;
+				   							font-size: 14px;
+				   							font-family: 'Conv_bpg_mrgvlovani_2009';
+
+				   						}
+				   					}
+
+
+				   					.food_species{
+
+										padding: 5px;
+										text-align: center;
+										border: 1px solid #404041;
+				   						 span {
+
+				   						 	display: block;
+				   						 	color: #404041;
+				   							font-size: 14px;
+				   							font-family: 'Conv_bpg_mrgvlovani_2009';
+				   						 }
+				   					}
+				   				}
+				   } 
+
+					
+			}
+	}
+
+
+
+#exampleModal {
+	background: unset;
+	background-color:rgba(245, 196, 0, .7);
+}	

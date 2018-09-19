@@ -372,6 +372,60 @@ a:hover {
         font-family: 'Conv_gl-gordeziani-bold';
         color: #8C8934; }
 
+.farmers_fluid {
+  background-image: url("../images/Asset 1.png");
+  height: 60vh;
+  background-position: center center;
+  background-size: cover; }
+
+.farmers_container {
+  text-align: center; }
+  .farmers_container .farmers_main_tittle {
+    border-left: 3px solid #F5C400;
+    padding: 0 5px;
+    background-image: url(../images/tittle_bord.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    display: inline-block;
+    margin-top: 70px;
+    margin-bottom: 40px; }
+    .farmers_container .farmers_main_tittle h2 {
+      color: #493728;
+      font-size: 40px;
+      font-family: 'Conv_gl-gordeziani-medium'; }
+  .farmers_container .advice_container {
+    border: 1px solid #F5C400; }
+    .farmers_container .advice_container .advice_img_box {
+      max-height: 300px;
+      overflow: hidden; }
+      .farmers_container .advice_container .advice_img_box img {
+        width: 100%;
+        height: 100%; }
+    .farmers_container .advice_container .advice_tex_box {
+      display: flex;
+      flex-direction: column;
+      background-color: #F5C400;
+      padding: 25px 60px; }
+      .farmers_container .advice_container .advice_tex_box h3 {
+        color: #493728;
+        font-size: 28px;
+        font-family: 'Conv_gl-gordeziani-medium'; }
+      .farmers_container .advice_container .advice_tex_box p {
+        text-align: left;
+        color: #493728;
+        font-family: 'Conv_bpg_mrgvlovani_2009';
+        font-size: 13px;
+        margin-top: 40px; }
+      .farmers_container .advice_container .advice_tex_box .farmers_link {
+        margin-left: auto; }
+        .farmers_container .advice_container .advice_tex_box .farmers_link a {
+          color: #F5C400;
+          padding: 10px 20px;
+          background-color: #493728;
+          float: right;
+          font-family: 'Conv_gl-gordeziani-medium';
+          font-size: 20px; }
+
 .row:after, .row:before {
   content: unset; }
 
@@ -972,19 +1026,189 @@ a:hover {
         .products_fluid .products_container .main_products_row .producs_price_box select option {
           cursor: pointer; }
 
-.products_inside_container .products_tittle {
-  border-left: 3px solid #F5C400;
-  padding: 0 5px;
-  background-image: url(../images/tittle_bord.png);
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  margin: 70px; }
-  .products_inside_container .products_tittle h2 {
+.products_inside_container {
+  max-width: 1400px; }
+  .products_inside_container .food_content_lft_row {
+    height: 100%; }
+  .products_inside_container .foot_content_box {
+    height: 100%; }
+  .products_inside_container .products_tittle {
+    border-left: 3px solid #F5C400;
+    padding: 0 5px;
+    background-image: url(../images/tittle_bord.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    margin: 70px; }
+    .products_inside_container .products_tittle h2 {
+      color: #493728;
+      font-size: 40px;
+      font-family: "Conv_gl-gordeziani-medium"; }
+  .products_inside_container .food_content {
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000; }
+  .products_inside_container .inside_product_info {
+    padding: 30px 20px; }
+    .products_inside_container .inside_product_info .inside_product_tittle_rating {
+      margin-bottom: 40px; }
+      .products_inside_container .inside_product_info .inside_product_tittle_rating h2 {
+        color: #493728;
+        font-size: 16px;
+        font-family: 'Conv_bpg_mrgvlovani_2009'; }
+      .products_inside_container .inside_product_info .inside_product_tittle_rating span {
+        display: block;
+        color: #F5C400;
+        font-size: 37px;
+        padding-left: 3px; }
+      .products_inside_container .inside_product_info .inside_product_tittle_rating img {
+        padding-top: 30px;
+        padding-bottom: 15px; }
+  .products_inside_container .inside_product_information h3 {
     color: #493728;
-    font-size: 40px;
-    font-family: "Conv_gl-gordeziani-medium"; }
-.products_inside_container .food_content {
-  border-right: 1px solid #000;
-  border-bottom: 1px solid #000; }
+    font-size: 16px;
+    font-family: 'Conv_bpg_mrgvlovani_2009'; }
+  .products_inside_container .inside_product_information p {
+    color: #000D20;
+    font-size: 16px;
+    font-family: 'Conv_BPG_Tahoma_Glaho';
+    margin-top: 30px;
+    margin-bottom: 45px; }
+  .products_inside_container .inside_product_information a {
+    display: inline-block;
+    background-color: #23170E;
+    color: #fff;
+    padding: 7px 15px;
+    font-family: 'Conv_bpg_mrgvlovani_2009';
+    font-size: 18px;
+    border-radius: 5px; }
+
+.products_main_info_container {
+  max-width: 1645px;
+  margin-top: 140px; }
+  .products_main_info_container .products_main_info_tabs {
+    border-bottom: 1px solid #D1D3D4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 46px; }
+    .products_main_info_container .products_main_info_tabs .tabs_info h4 {
+      color: #493728;
+      font-size: 18px;
+      font-family: 'Conv_bpg_mrgvlovani_2009'; }
+  .products_main_info_container .products_main_info_row {
+    padding: 45px 45px; }
+  .products_main_info_container .prduct_main_info_up li {
+    font-size: 16px;
+    color: #000D20;
+    font-family: 'Conv_bpg_mrgvlovani_2009'; }
+    .products_main_info_container .prduct_main_info_up li:not(:last-child) {
+      margin-bottom: 20px; }
+    .products_main_info_container .prduct_main_info_up li span {
+      color: #F5C400;
+      font-size: 16px; }
+  .products_main_info_container .product_main_info_down {
+    margin-top: 40px; }
+    .products_main_info_container .product_main_info_down p {
+      font-size: 16px;
+      color: #000D20;
+      font-family: 'Conv_bpg_mrgvlovani_2009';
+      margin-bottom: 0px; }
+    .products_main_info_container .product_main_info_down li {
+      font-size: 16px;
+      color: #000D20;
+      font-family: 'Conv_bpg_mrgvlovani_2009'; }
+      .products_main_info_container .product_main_info_down li span {
+        color: #F5C400;
+        font-size: 16px; }
+  .products_main_info_container .main_info_tables .table_header {
+    background-color: #23170E;
+    padding: 12px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer; }
+    .products_main_info_container .main_info_tables .table_header h4 {
+      color: #fff;
+      font-family: 'Conv_bpg_mrgvlovani_2009';
+      font-size: 16px; }
+  .products_main_info_container .main_info_tables .table_box {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto; }
+    .products_main_info_container .main_info_tables .table_box .table_content {
+      width: 33.333%; }
+      .products_main_info_container .main_info_tables .table_box .table_content .food_tittle {
+        text-align: center;
+        padding: 7px;
+        border: 1px solid #404041;
+        border-bottom: none; }
+        .products_main_info_container .main_info_tables .table_box .table_content .food_tittle h5 {
+          color: #404041;
+          font-size: 14px;
+          font-family: 'Conv_bpg_mrgvlovani_2009'; }
+      .products_main_info_container .main_info_tables .table_box .table_content .food_species {
+        padding: 5px;
+        text-align: center;
+        border: 1px solid #404041; }
+        .products_main_info_container .main_info_tables .table_box .table_content .food_species span {
+          display: block;
+          color: #404041;
+          font-size: 14px;
+          font-family: 'Conv_bpg_mrgvlovani_2009'; }
+
+#exampleModal {
+  background: unset;
+  background-color: rgba(245, 196, 0, 0.7); }
+
+.services_fluid {
+  background-image: url("../images/Asset 1.png");
+  height: 60vh;
+  background-position: center center;
+  background-size: cover; }
+
+.service_fluid {
+  position: relative; }
+  .service_fluid:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/service-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+    filter: blur(55px); }
+  .service_fluid .service_container .service_tittle {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 40px; }
+    .service_fluid .service_container .service_tittle h2 {
+      color: #493728;
+      font-size: 28px;
+      font-family: 'Conv_gl-gordeziani-medium'; }
+  .service_fluid .service_text_box {
+    margin-bottom: 230px; }
+    .service_fluid .service_text_box p {
+      font-family: 'Conv_BPG_Tahoma_Glaho';
+      font-size: 16px;
+      color: #000D20;
+      margin-bottom: 25px; }
+
+.service_fix_icons {
+  position: fixed;
+  top: 50%;
+  right: 5%;
+  z-index: 10; }
+  .service_fix_icons .service_icon {
+    text-align: center;
+    margin-bottom: 20px; }
+    .service_fix_icons .service_icon img {
+      width: 70px; }
+    .service_fix_icons .service_icon h2 {
+      color: #8D6A29;
+      font-size: 20px;
+      font-family: 'Conv_gl-gordeziani-medium'; }
 
 /*# sourceMappingURL=main.css.map */

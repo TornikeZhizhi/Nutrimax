@@ -120,3 +120,21 @@ $(document).ready(function() {
 });
 
 
+//products
+
+
+$(document).ready(function() {
+    $(".table_header").on("click",function(){
+        $(this).parent().find(".table_content").slideToggle();
+    })
+})
+
+
+
+
+$(document).ready(function() {
+    $(".advice_img_box").mouseenter(function(){
+
+           $(this).parent().find(".advice_info_box").slideDown()
+    })
+})
