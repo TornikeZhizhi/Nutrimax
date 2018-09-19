@@ -127,14 +127,67 @@ $(document).ready(function() {
     $(".table_header").on("click",function(){
         $(this).parent().find(".table_content").slideToggle();
     })
+
+    $(".product_box img").on("click",function(){
+       location.assign("products_inside.html");
+    })
+
 })
 
+
+
+
+
+//farmers
 
 
 
 $(document).ready(function() {
-    $(".advice_img_box").mouseenter(function(){
+    $(".advice_main_info_box").mouseenter(function(){
+           $(this).find(".advice_info_box").slideDown()
+           $(this).find(".advice_tex_box").css("background","#F5C400")
 
-           $(this).parent().find(".advice_info_box").slideDown()
     })
+
+     $(".advice_main_info_box").mouseleave(function(){
+           $(this).find(".advice_info_box").slideUp()
+           $(this).find(".advice_tex_box").css("background","#fff")
+    })
+
 })
+
+
+// products insied
+
+$(document).ready(function() {
+    $(".tabs_info").each(function(index){
+
+        $(this).on("click",function(){
+             $(".products_main_info_row").css("display","none");
+             $(".products_main_info_row").eq(index).css("display","flex") 
+        })
+
+    })
+
+
+})
+
+
+
+// services
+
+$(document).ready(function(){
+
+    $(".service_icon").each(function(index){
+        $(this).on("click",function(){
+
+            $(".service_wrapp").css("display","none"); 
+           $(".service_wrapp").eq(index).css("display","block"); 
+
+        })
+    })
+
+
+
+})
+
