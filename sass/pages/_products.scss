@@ -188,7 +188,7 @@
     				
 
 					.product_box {
-						background-color: #F6F4F1;
+						background-color: rgba(246,244,241, .7);
 						padding: 15px;
 						display: flex;
 						flex-direction: column;
@@ -209,7 +209,7 @@
 								    	z-index: 10;
 								    	background-color: #493728;
 								    	width: 100%;
-								    	height: 27px;
+								    	height: 30px;
 								    	display: none;
 
 								    		&>span, div {
@@ -221,7 +221,9 @@
 								    		}
 
 								    				img {
-								    					padding:0px;
+								    					padding:2px;
+								    					width: 24px;
+								    					filter: brightness(0) invert(1);
 
 								    				}
 
@@ -229,9 +231,12 @@
 
 
 								    					 span  {
-								    					 	color: 20px;
+								    					 	font-size: 16px;
 								    					 	font-family: 'Conv_gl-gordeziani-medium';
 								    					 	color: #fff;
+								    					 	padding-left: 5px;
+														    margin-bottom: -3px;
+														    display: inline-block;
 								    					 	
 								    					 }
 								    				}
@@ -569,15 +574,15 @@
 
 #exampleModal {
 	background: unset;
-	background-color:rgba(245, 196, 0, .9);
+	background-color: rgba(245, 196, 0, .9);
 
 	.modal-dialog {
 		max-width: 700px;
 		width: 80%;
-		    margin: 6.75rem auto;
+		margin: 6.75rem auto;
 	}
 	.modal-body {
-		background-color: rgba(0,0,0,.9);
+		background-color: #23170E;
 	}
 
 	.modal_content {
@@ -592,10 +597,15 @@
 		text-align: center;
 		 max-width: 280px;
    		 margin: 0 auto;
-   		 border-left: 1px solid #fff;
+   		 border-left: 2px solid #fff;
+   		 background-image: url("../images/hend.png");
+   		 background-repeat: no-repeat;
+   		 background-position: right bottom;
 		  h2 {
 		  	color: #fff;
-		  	font-size: 20px;
+		  	font-size: 40px;
+		  	font-family: 'Conv_gl-gordeziani-medium';
+
 		  }
 	}
 
@@ -607,12 +617,15 @@
 		 	text-align: center;
 		 		input {
 
-		 			background-color: rgb(0,0,0);
+		 			background-color:#190F09;
 		 			color: #F5C400;
 		 			border:none;
 		 			outline: none;
 		 			border-radius: 5px;
 		 			    padding: 15px 20px;
+		 			    font-size: 13px;
+		 			    font-family: 'Conv_bpg_mrgvlovani_caps_2010';
+
 
 		 			&::placeholder {
 		 				color:#F5C400;
@@ -623,10 +636,12 @@
 		 		textarea {
 		 			border:none;
 		 			color: #F5C400;
-		 			background-color: rgb(0,0,0);
+		 			background-color: #190F09;
 		 			height: 115px;
 		 			resize: none;
 		 			border-radius: 5px;
+		 			font-family: 'Conv_bpg_mrgvlovani_caps_2010';
+		 			font-size: 13px;
 		 			    padding: 15px 20px;
 
 		 			&::placeholder {
@@ -639,14 +654,22 @@
 		 			background-color: #F5C400;
 		 			border-radius: 10px;
 		 			padding: 10px 26px;
-		 			    margin-top: 20px;
+		 			margin-top: 20px;
+		 			font-family: 'Conv_bpg_nino_mtavruli_normal';
+		 			font-size: 18px;
+		 			font-weight: bold;
+		 			padding: 15px 26px 7px;
 		 		}
 		 }
 	}
 }
 
 
-
+.modal-content {
+	border:unset;
+	border-radius: 10px;
+	overflow: hidden;
+}
 
 @keyframes prInside {
 

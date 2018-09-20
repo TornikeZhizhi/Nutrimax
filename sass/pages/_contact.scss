@@ -1,0 +1,402 @@
+
+
+.contact_fluid {
+	background-image: url(../images/contact_bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.contact_container {
+
+	.map_row>.col-md-4, .col-md-8 {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	max-width: 1376px;
+
+	 .contact_tittle {
+
+	 	    border-left: 3px solid #F5C400;
+		    padding: 0 5px;
+		    background-image: url(../images/tittle_bord.png);
+		    background-repeat: no-repeat;
+		    background-position: right bottom;
+		    margin: 70px;
+		    display: inline-block;
+
+	 	 h2 {
+	 	 	    color: #493728;
+			    font-size: 40px;
+			    font-family: "Conv_gl-gordeziani-medium";
+	 	 }
+	 }
+
+
+	 .addres_box {
+	     padding: 100px 10px;
+    text-align: left;
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #D1D3D4;
+    border-right: none;
+    border-bottom: none;
+
+
+	 	 p {
+	 	 	color: #23170E;
+	 	 	font-size: 17px;
+	 	 	font-family: 'Conv_bpg_mrgvlovani_caps_2010';
+
+
+	 	 	&:last-child{
+	 	 		margin-bottom:0px;
+	 	 	}
+	 	 }
+
+
+	 	 img {
+	 	 	padding-right: 10px;
+	 	 	width: 25px;
+	 	 }
+	 }
+
+.magazine_row {
+	background-color: #F5C400;
+	padding-bottom:20px;
+}
+
+	 .map_box {
+	 		width: 100%;
+	 		height: 100%;
+	 }
+
+
+
+	 .magazines_tittle {
+	 	text-align: center;
+	 	width: 100%;
+	 	margin: 20px 0;
+
+	 	   h3 {
+	 	   		color: #23170E;
+	 	   		font-size: 20px;
+	 	   		font-family: 'Conv_bpg_mrgvlovani_caps_2010';
+	 	   		border-bottom: 2px solid #23170E;
+	 	   		padding: 5px 0;
+	 	   		display: inline-block;
+	 	   		font-weight: bold;
+	 	   }
+	 }
+
+
+	 .magazine_address_box {
+	 	max-width: 200px;
+	    display: flex;
+	        align-items: flex-start;
+	    flex-direction: column;
+
+	    &>span {
+	    	font-size: 15px;
+	    	color: #23170E;
+	    	    padding-bottom: 5px;
+	    	font-family: 'Conv_bpg_mrgvlovani_caps_2010';
+	    }
+
+	    p {
+	    	font-size: 13px;
+	    	color: #23170E;
+	    	font-family: 'Conv_bpg_mrgvlovani_caps_2010';
+	    	margin-bottom: 5px;
+
+	    	 img {
+	    	 	padding-right: 10px;
+	    	 }
+	    }
+	     h5 {
+	     	    align-self: center;
+	     	    color: #23170E;
+	     	    font-family: 'Conv_bpg_mrgvlovani_caps_2010';
+	     	    font-size: 16px;
+
+
+
+	     }
+	 }
+
+
+
+
+	.diler_row {
+		background-color: #23170E;
+
+				.diler_tittle {
+					text-align: center;
+					margin: 10px 0;
+					width: 100%;
+					 h2 {
+					 	color: #F5C400;
+					 	font-size: 20px;
+					 	font-family: 'Conv_bpg_mrgvlovani_caps_2010';
+					 	border-bottom: 2px solid #F5C400;
+					 	padding: 5px 0;
+					 	display: inline-block;
+					 }
+				}
+
+
+		.city_box {
+			width: 100%;
+			    padding: 30px 0;
+
+			.city_up {
+				width: 80%;
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-between;
+				    padding-bottom: 15px;
+			}
+
+			.city_down {
+				width: 65%;
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-between;
+			}
+			span {
+				color: #fff;
+				font-size: 16px;
+				font-family: 'Conv_bpg_mrgvlovani_caps_2010';
+				cursor: pointer;
+
+			}
+		}			
+	}
+
+
+	.diler_content {
+		background-color: #23170E;
+		border-top: 2px solid #fff;
+		padding: 20px 0;
+		position: relative;
+		animation: footForm .8s;
+		display: none;
+
+	
+
+		.diler_up_box {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 100px;
+			height: 100%;
+			background-color: #F5C400;
+			z-index: 10;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+
+			    img {
+			    	transition: 1s;
+
+			    	  &.active {
+			    	  	transform: rotate(-180deg);
+			    	  }
+			    }
+		}
+				
+				.diler_company_tittle {
+
+					text-align: center;
+					    margin-bottom: 15px;
+
+					 h3 {
+					 	font-family: 'Conv_bpg_mrgvlovani_caps_2010';
+					 	font-size: 16px;
+					 	color: #F5C400;
+					 }
+				}
+
+				.diler_company_address {
+					display: flex;
+					justify-content: space-between;
+					    width: 93%;
+
+					p {
+							font-size: 13px;
+					color: #fff;
+					font-family: 'Conv_bpg_mrgvlovani_caps_2010';
+					margin-bottom: 0px;
+
+						img {
+							    filter: brightness(0) invert(1);
+							    padding-right: 10px;
+						}
+					}
+
+				
+				}
+
+	}
+
+
+
+	.footer_form {
+			    margin: 40px 0 101px;
+			    animation: footForm .8s;
+		
+		form {
+
+			.admin_sells {
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				position: relative;
+				 margin: 30px 0 20px;
+
+
+				&:after{
+				 			content:"";
+				 			position: absolute;
+				 			width: 100%;
+						    top: 28px;
+						    left: 50%;
+				 			transform: translateX(-50%);
+				 			background-color: #D1D3D4;
+				 			height: 2px;
+				 		}
+
+				 h3{
+				 	position: relative;
+				 	cursor: pointer;
+				 
+				 		
+				 }
+			}
+			
+
+			button {
+				color: #fff;
+				background-color: #F5C400;
+				padding: 10px 20px;
+				font-size: 18px;
+				border-radius: 5px;
+				border: none;
+				cursor: pointer;
+				font-family: 'Conv_bpg_mrgvlovani_caps_2010';
+				margin-top: 15px;
+			}
+
+			input::placeholder {
+				color:#23170E;
+				font-family: 'Conv_bpg_mrgvlovani_caps_2010';
+			}
+
+			input:focus::placeholder{
+				color: #F5C400;
+			}
+
+			input {
+				background-color: transparent;
+				outline: none;
+				color: #F5C400;
+				font-size: 13px;
+				border:none;
+				font-family: 'Conv_bpg_mrgvlovani_caps_2010';
+				border-bottom: 2px solid #23170E;
+				box-shadow: unset;
+				    padding: 15px 25px;
+					
+					&:focus {
+						border-bottom: 2px solid #F5C400;
+
+					}
+
+
+			}	
+			
+			textarea::placeholder {
+				color:#23170E;
+				font-family: 'Conv_bpg_mrgvlovani_caps_2010';
+			}
+
+			textarea:focus::placeholder{
+				color: #F5C400;
+			}
+
+
+			textarea {
+				background-color: transparent;
+				outline: none;
+				box-shadow: unset;
+				border:none;
+				font-family: 'Conv_bpg_mrgvlovani_caps_2010';
+				color: #F5C400;
+				border-bottom: 2px solid #23170E;
+				font-size: 13px; 
+				min-height: 150px;
+				padding: 15px 25px;
+
+				&:focus {
+					border-bottom: 2px solid #F5C400;
+					
+
+				}
+			}
+
+
+			 .form_tittle {
+
+			 		text-align: center;
+
+			 			 h2 {
+			 			 	color: #23170E;
+			 			 	font-size: 20px;
+			 			 	font-family: 'Conv_bpg_mrgvlovani_caps_2010';
+			 			 }
+			 }
+
+			 .admin_sells {
+
+			 	 h3 {	
+
+			 	 			color: #23170E;
+			 			 	font-size: 15px;
+			 			 	font-family: 'Conv_bpg_mrgvlovani_caps_2010';
+			 			 	 padding: 5px 0px;
+			 			 	 border-bottom: 2px solid #23170E;
+			 			 	 z-index: 10;
+   							 position: relative;
+
+
+   							 &:last-child{
+   							 	border-color:transparent;
+   							 }
+			 	 }
+			 }
+		}
+	}
+
+	.sell_form {
+		display: none;
+	}
+
+}
+
+
+
+@keyframes footForm {
+	0%{
+		opacity: 0;
+	}
+
+
+	100% {
+		opacity: 1;
+	}
+}

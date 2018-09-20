@@ -1,11 +1,11 @@
 
 
 
-$(window).ready(function(){
+$(document).ready(function(){
 
 $('.news_slide').owlCarousel({
     loop:true,
-    margin:10,
+    margin:15,
     nav:true,
     responsive:{
         0:{
@@ -22,6 +22,9 @@ $('.news_slide').owlCarousel({
 
 $('.partners_slide').owlCarousel({
     loop:true,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true,
     margin:10,
     nav:true,
     responsive:{
@@ -190,4 +193,61 @@ $(document).ready(function(){
 
 
 })
+
+
+
+//footer form
+
+
+
+$(document).ready(function(){
+
+ 
+ $(".admin_tab").on("click",function(event){
+
+    $(".admin_tab").css("border-color","#23170E");
+    $(".sell_tab").css("border-color","transparent");
+
+    $(".footer_form").css("display","none");
+    $(".footer_form").eq(0).css("display","block");
+
+ })
+
+  $(".sell_tab").on("click",function(event){
+
+    $(".sell_tab").css("border-color","#23170E");
+    $(".admin_tab").css("border-color","transparent");
+
+    $(".footer_form").css("display","none");
+    $(".footer_form").eq(1).css("display","block");
+
+ })
+
+
+
+
+$(".city_box span").each(function(index){
+
+    $(this).on("click",function(){
+
+        $(".diler_content").css("display","none");
+        $(".diler_content").eq(index).css("display","flex");
+
+         $(".diler_up_box").find("img").removeClass("active");
+    })
+ 
+
+})
+
+
+$(".diler_up_box").on("click",function(){
+
+    $(".diler_content").slideUp()
+
+    $(this).find("img").addClass("active");
+
+})
+
+})
+
 
