@@ -137,3 +137,42 @@
 
 }
 
+
+
+/*// responsive*/
+
+
+
+@media only screen and (max-width: 1200px){
+	
+	.footer_icons_col {
+		display: flex;
+		justify-content: flex-end;
+	}
+	
+	.footer_fluid .copyright_box span {
+ 
+    	font-size: 12px;
+
+	}
+	.footer_fluid .footer_container .footer_mail_box span {
+    font-size: 13px;
+	}
+	
+	.footer_fluid .footer_container .footer_mail_box a {
+   
+    font-size: 11px;
+
+	}
+
+	.footer_fluid .footer_container .footer_cnt_box a {
+    font-size: 14px;
+
+	}
+
+.footer_fluid .footer_container .footer_cnt_box a {
+    font-size: 14px;
+
+}
+
+}

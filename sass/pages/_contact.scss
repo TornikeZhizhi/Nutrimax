@@ -400,3 +400,100 @@
 		opacity: 1;
 	}
 }
+
+
+/*// responsive*/
+
+
+@media only screen and (max-width: 1224px)  {
+
+
+.contact_container .contact_tittle h2 {
+  
+    font-size: 30px;
+
+}
+.contact_container .addres_box p {
+  
+    font-size: 13px;
+    margin-bottom: 8px;
+    
+}
+
+
+}
+
+@media only screen and (max-width: 1024px)  {
+
+
+.contact_container .addres_box p {
+    font-size: 11px;
+    margin-bottom: 8px;
+}
+.contact_container .addres_box {
+    padding: 60px 10px;
+ 
+}
+.contact_container .magazines_tittle h3 {
+    
+    font-size: 13px;
+}
+
+.contact_container .magazine_address_box h5 {
+ 
+    font-size: 15px;
+}
+.contact_container .magazine_address_box p {
+    font-size: 10px;
+  
+}
+
+.contact_container .diler_row .diler_tittle h2 {
+  
+    font-size: 13px;
+}
+
+.contact_container .diler_row .city_box span {
+
+    font-size: 12px;
+    
+}
+.contact_container .diler_content .diler_company_tittle h3 {
+ 
+    font-size: 11px;
+  
+}
+
+.contact_container .diler_content .diler_company_address p {
+    font-size: 10px;
+   
+}
+.contact_container .footer_form form .form_tittle h2 {
+    
+    font-size: 13px;
+  
+}
+.contact_container .footer_form form .admin_sells h3 {
+
+    font-size: 11px;
+   
+}
+
+.contact_container .footer_form form .admin_sells:after {
+   
+    top: 24px;
+}
+.contact_container .footer_form form input {
+ 
+    font-size: 12px;
+    
+    padding: 10px 25px;
+}
+
+.contact_container .footer_form form button {
+
+    font-size: 16px;
+   
+}
+
+}

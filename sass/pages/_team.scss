@@ -175,3 +175,51 @@
 
 		}
 }
+
+/*responsive*/
+
+@media only screen and (max-width: 1500px) {
+	
+.our_team_row {
+	justify-content: center;
+}
+
+}
+
+
+@media only screen and (max-width: 1024px) {
+	
+.our_team_fluid .our_team_container .our_team_tittle h2 {
+    
+    font-size: 30px;
+    
+}
+
+.our_team_fluid .our_team_container .our_team_box_left .our_team_info h3 {
+    color: #8C8934;
+    font-size: 12px;
+}
+.our_team_fluid .our_team_container .our_team_box_left .our_team_info p {
+    
+    font-size: 13px;
+   
+}
+
+.our_team_fluid .our_team_container .our_team_box_right .our_team_info h3 {
+    color: #8C8934;
+    font-size: 12px;
+}
+
+.our_team_fluid .our_team_container .our_team_box_right .our_team_info p {
+  
+    font-size: 13px;
+   
+}
+.footer_flower_box img {
+	width: 100px;
+}
+.footer_flower_box img {
+    width: 300px;
+}
+
+}

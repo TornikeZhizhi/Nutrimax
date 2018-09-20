@@ -154,6 +154,28 @@ a:hover {
           width: 24px;
           transition: .4s; }
 
+/*// responsive*/
+@media only screen and (max-width: 1500px) {
+  .header_fluid .header_nav {
+    width: 95%; }
+
+  .header_fluid .header_nav ul a {
+    font-size: 25px; }
+
+  .header_fluid .header_language_search_box .header_language_box span {
+    font-size: 23px; }
+
+  .header_fluid {
+    padding: 0 20px; } }
+@media only screen and (max-width: 1200px) {
+  .header_fluid .header_logo a img {
+    width: 120px; }
+
+  .header_fluid .header_nav ul a {
+    font-size: 21px; }
+
+  .header_fluid .header_language_search_box .header_language_box span {
+    font-size: 20px; } }
 .footer_fluid {
   background-color: #493728;
   padding-top: 50px; }
@@ -234,6 +256,26 @@ a:hover {
             height: 100%;
             background-color: #fff; }
 
+/*// responsive*/
+@media only screen and (max-width: 1200px) {
+  .footer_icons_col {
+    display: flex;
+    justify-content: flex-end; }
+
+  .footer_fluid .copyright_box span {
+    font-size: 12px; }
+
+  .footer_fluid .footer_container .footer_mail_box span {
+    font-size: 13px; }
+
+  .footer_fluid .footer_container .footer_mail_box a {
+    font-size: 11px; }
+
+  .footer_fluid .footer_container .footer_cnt_box a {
+    font-size: 14px; }
+
+  .footer_fluid .footer_container .footer_cnt_box a {
+    font-size: 14px; } }
 .for_about {
   display: none !important; }
 
@@ -381,6 +423,74 @@ a:hover {
         font-family: 'Conv_gl-gordeziani-bold';
         color: #8C8934; }
 
+/*// about responsive*/
+@media only screen and (max-width: 1024px) {
+  .about_fluid .about_container .about_tittle h2 {
+    font-size: 30px; }
+
+  .about_fluid .about_container .mission_box p {
+    font-size: 13px; }
+
+  .about_fluid .about_container .mission_box {
+    border-right: 3px solid #8C8934;
+    padding: 41px 20px; }
+
+  .about_fluid .about_container .mission_img_box h3 {
+    font-size: 31px; }
+
+  .about_fluid .about_container .mission_img_box img {
+    width: 100px; }
+
+  .about_fluid .about_container .mission_img_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; }
+
+  .about_fluid .about_container > .row:not(:first-child) {
+    padding: 160px 0; }
+
+  .about_fluid .about_container .about_inside_about p {
+    font-size: 13px;
+    font-family: 'Conv_BPG_Tahoma_Glaho';
+    color: #000D20; }
+
+  .about_fluid .about_container .about_partners_box p {
+    color: #000D20;
+    font-size: 13px;
+    font-family: 'Conv_BPG_Tahoma_Glaho'; }
+
+  .about_fluid .about_container .about_knowhow_text p {
+    color: #000D20;
+    font-size: 13px;
+    font-family: 'Conv_BPG_Tahoma_Glaho'; }
+
+  .about_fluid .about_container .about_quality_text p {
+    color: #000D20;
+    font-size: 13px;
+    font-family: 'Conv_BPG_Tahoma_Glaho'; }
+
+  .about_fluid .about_container .about_news_text p {
+    font-size: 13px;
+    color: #000D20;
+    font-family: 'Conv_BPG_Tahoma_Glaho'; }
+
+  .about_container .row h3 {
+    font-size: 31px !important; }
+
+  .about_container .row img {
+    width: 100px !important; }
+
+  .about_fluid .about_container .about_partners_box {
+    padding: 30px 20px; }
+
+  .about_fluid .about_container .about_qualiti_tittle img {
+    padding-left: 0px; }
+
+  .about_fluid .about_container .about_news_tittle {
+    height: 100%;
+    justify-content: center; } }
 .farmers_fluid {
   background-image: url("../images/Asset 1.png");
   height: 60vh;
@@ -480,6 +590,41 @@ a:hover {
       margin-bottom: 25px;
       font-family: 'Conv_bpg_mrgvlovani_2009'; }
 
+/*//responsive*/
+@media only screen and (max-width: 1600px) {
+  .farmers_inside_fluid .farmers_inside_main {
+    width: 70vw; }
+
+  .farmers_inside_fluid .farmers_inside_main .ingredients_text p {
+    font-size: 12px;
+    color: #493728;
+    margin-bottom: 15px;
+    font-family: 'Conv_bpg_mrgvlovani_2009'; } }
+@media only screen and (max-width: 1300px) {
+  .farmers_inside_fluid .farmers_inside_main .ingredients_text p {
+    font-size: 12px;
+    margin-bottom: 15px; } }
+@media only screen and (max-width: 1024px) {
+  .farmers_container .farmers_main_tittle h2 {
+    font-size: 30px; }
+
+  .farmers_container .advice_container .advice_tex_box h3 {
+    font-size: 25px; }
+
+  .farmers_inside_fluid .farmers_inside_main .ingredients_title h2 {
+    font-size: 25px; }
+
+  .farmers_inside_fluid .farmers_inside_main .ingredients_text p {
+    font-size: 11px;
+    margin-bottom: 20px; }
+
+  .farmers_inside_fluid .farmers_inside_main {
+    width: 55%;
+    margin: 55px auto 0;
+    padding: 30px 21px 10px 31px;
+    position: relative;
+    overflow: hidden;
+    z-index: 100; } }
 .contact_fluid {
   background-image: url(../images/contact_bg.jpg);
   background-size: cover;
@@ -727,8 +872,63 @@ a:hover {
     opacity: 0; }
   100% {
     opacity: 1; } }
+/*// responsive*/
+@media only screen and (max-width: 1224px) {
+  .contact_container .contact_tittle h2 {
+    font-size: 30px; }
+
+  .contact_container .addres_box p {
+    font-size: 13px;
+    margin-bottom: 8px; } }
+@media only screen and (max-width: 1024px) {
+  .contact_container .addres_box p {
+    font-size: 11px;
+    margin-bottom: 8px; }
+
+  .contact_container .addres_box {
+    padding: 60px 10px; }
+
+  .contact_container .magazines_tittle h3 {
+    font-size: 13px; }
+
+  .contact_container .magazine_address_box h5 {
+    font-size: 15px; }
+
+  .contact_container .magazine_address_box p {
+    font-size: 10px; }
+
+  .contact_container .diler_row .diler_tittle h2 {
+    font-size: 13px; }
+
+  .contact_container .diler_row .city_box span {
+    font-size: 12px; }
+
+  .contact_container .diler_content .diler_company_tittle h3 {
+    font-size: 11px; }
+
+  .contact_container .diler_content .diler_company_address p {
+    font-size: 10px; }
+
+  .contact_container .footer_form form .form_tittle h2 {
+    font-size: 13px; }
+
+  .contact_container .footer_form form .admin_sells h3 {
+    font-size: 11px; }
+
+  .contact_container .footer_form form .admin_sells:after {
+    top: 24px; }
+
+  .contact_container .footer_form form input {
+    font-size: 12px;
+    padding: 10px 25px; }
+
+  .contact_container .footer_form form button {
+    font-size: 16px; } }
 .row:after, .row:before {
   content: unset; }
+
+.owl-nav {
+  display: none; }
 
 .right_fixed_icons {
   position: fixed;
@@ -954,12 +1154,14 @@ a:hover {
         width: 50%;
         max-height: 355px; }
         .home_news_fluid .home_news_container .news_box .news_img_box a {
-          display: block; }
+          display: block;
+          height: 100%; }
           .home_news_fluid .home_news_container .news_box .news_img_box a img {
             width: 100%;
             height: 100%;
             background-size: cover;
-            transition: all .4s; }
+            transition: all .4s;
+            object-fit: cover; }
       .home_news_fluid .home_news_container .news_box .news_info_box {
         width: 50%;
         padding: 40px 15px 15px;
@@ -1063,6 +1265,75 @@ a:hover {
   to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); } }
+/*//responsive*/
+@media only screen and (max-width: 1500px) {
+  .home_main_fluid .home_tittle_box h1 {
+    font-size: 57px; }
+
+  .home_products_fluid .home_product_container .products_content a h3 {
+    font-size: 26px; }
+
+  .home_products_fluid .home_product_container .products_content a {
+    min-height: 305px; }
+
+  .home_products_fluid .home_product_container {
+    width: 90%; } }
+@media only screen and (max-width: 1200px) {
+  .home_main_fluid .home_tittle_box h1 {
+    font-size: 50px; }
+
+  .home_products_fluid .home_product_container {
+    width: 90%; }
+
+  .home_products_fluid .home_product_container .products_content a {
+    min-height: 280px; }
+
+  .home_products_fluid .home_product_container .products_content a h3 {
+    font-size: 21px; }
+
+  .home_services_fluid .home_services_tittle_container .laboratory_tittle h2 {
+    font-size: 25px;
+    color: #F5C400;
+    font-family: 'Conv_gl-gordeziani-medium'; }
+
+  .home_services_fluid .home_services_tittle_container .farmers_tittle h2 {
+    font-size: 25px;
+    color: #F5C400;
+    font-family: 'Conv_gl-gordeziani-medium'; }
+
+  .home_services_fluid .home_services_content_container .services_tittle h3 {
+    font-size: 30px; }
+
+  .home_services_fluid .home_services_content_container .laboratory_content p {
+    font-size: 13px; }
+
+  .home_news_fluid .home_news_container .news_box .news_info_box .news_info_text h3 {
+    font-size: 22px; }
+
+  .home_news_fluid .home_news_container .news_box .news_info_box .news_info_text p {
+    font-size: 12px;
+    margin-top: 10px; }
+
+  .home_news_fluid .home_news_container .news_box .news_info_box {
+    padding: 20px 15px 15px; }
+
+  .home_news_fluid .home_news_container .news_box .news_info_box a {
+    font-size: 19px; }
+
+  .home_partner_fluid .home_partners_tittle h2 {
+    font-size: 30px; }
+
+  .home_news_fluid .home_news_tittle h2 {
+    font-size: 30px; }
+
+  .home_products_fluid .products_tittle h2 {
+    font-size: 30px; }
+
+  .footer_fluid .footer_container .footer_address_box span:last-child {
+    font-size: 11px; }
+
+  .footer_fluid .footer_container .footer_icons a {
+    padding-left: 10px; } }
 .our_team_fluid {
   background-image: url("../images/home_pr_bg.png"); }
   .our_team_fluid .our_team_container {
@@ -1155,6 +1426,33 @@ a:hover {
     bottom: 99%;
     right: 5%; }
 
+/*responsive*/
+@media only screen and (max-width: 1500px) {
+  .our_team_row {
+    justify-content: center; } }
+@media only screen and (max-width: 1024px) {
+  .our_team_fluid .our_team_container .our_team_tittle h2 {
+    font-size: 30px; }
+
+  .our_team_fluid .our_team_container .our_team_box_left .our_team_info h3 {
+    color: #8C8934;
+    font-size: 12px; }
+
+  .our_team_fluid .our_team_container .our_team_box_left .our_team_info p {
+    font-size: 13px; }
+
+  .our_team_fluid .our_team_container .our_team_box_right .our_team_info h3 {
+    color: #8C8934;
+    font-size: 12px; }
+
+  .our_team_fluid .our_team_container .our_team_box_right .our_team_info p {
+    font-size: 13px; }
+
+  .footer_flower_box img {
+    width: 100px; }
+
+  .footer_flower_box img {
+    width: 300px; } }
 .products_fluid .products_container {
   max-width: 1600px; }
   .products_fluid .products_container .products_tittle {
@@ -1341,7 +1639,8 @@ a:hover {
       .products_fluid .products_container .main_products_row .producs_price_box select {
         width: 125px;
         height: 40px;
-        cursor: pointer; }
+        cursor: pointer;
+        border-radius: 5px; }
         .products_fluid .products_container .main_products_row .producs_price_box select option {
           cursor: pointer; }
 
@@ -1552,6 +1851,129 @@ a:hover {
     opacity: 0; }
   100% {
     opacity: 1; } }
+/*// responsive*/
+@media only screen and (max-width: 1500px) {
+  .products_main_info_container .products_main_info_tabs .tabs_info h4 {
+    font-size: 14px; }
+
+  .products_main_info_container .main_info_tables .table_header h4 {
+    font-size: 13px; }
+
+  .products_main_info_container .prduct_main_info_up li {
+    font-size: 13px; }
+
+  .products_main_info_container .product_main_info_down p {
+    font-size: 13px; }
+
+  .products_main_info_container .product_main_info_down li {
+    font-size: 13px; }
+
+  .products_main_info_container .product_main_info_down li span {
+    font-size: 13px; }
+
+  .products_main_info_container .prduct_main_info_up li span {
+    font-size: 13px; }
+
+  .products_main_info_container .main_info_tables .table_box .table_content .food_tittle h5 {
+    font-size: 12px; }
+
+  .products_main_info_container .main_info_tables .table_box .table_content .food_species span {
+    font-size: 12px; } }
+@media only screen and (max-width: 1200px) {
+  .products_main_info_container .products_main_info_tabs {
+    padding: 10px 20px; }
+
+  .products_main_info_container .products_main_info_tabs .tabs_info h4 {
+    font-size: 12px; }
+
+  .products_main_info_container .products_main_info_row {
+    padding: 30px 20px; } }
+@media only screen and (max-width: 1024px) {
+  .products_fluid .products_container .main_products_row .main_products_menu_col .animals_tab_panel label {
+    font-size: 12px; }
+
+  .products_fluid .products_container .products_tittle h2 {
+    font-size: 30px; }
+
+  .products_fluid .products_container .main_products_row .animals_row .pig_tittle h2 {
+    font-size: 14px; }
+
+  .products_fluid .products_container .main_products_row .row_wrapper .product_content .product_box h3 {
+    color: #493728;
+    font-size: 11px;
+    font-family: 'Conv_bpg_mrgvlovani_2009'; }
+
+  .new_box img {
+    width: 35px; }
+
+  .products_fluid .products_container .main_products_row .row_wrapper .product_content .product_box .star_price_box div, .products_fluid .products_container .main_products_row .row_wrapper .product_content .product_box .star_price_box span {
+    font-size: 13px; }
+
+  .products_fluid .products_container .main_products_row .row_wrapper .product_content .new_box {
+    left: 15%; }
+
+  .products_fluid .products_container .main_products_row .row_wrapper .down_product_tittle h2 {
+    font-size: 13px; }
+
+  .products_fluid .products_container .main_products_row .producs_price_box span {
+    font-size: 10px; }
+
+  .products_fluid .products_container .main_products_row .producs_price_box select {
+    width: 125px;
+    height: 31px;
+    cursor: pointer;
+    font-size: 10px;
+    border-radius: 5px; }
+
+  .products_inside_container .products_tittle h2 {
+    font-size: 30px; }
+
+  .products_inside_container .inside_product_info .inside_product_tittle_rating h2 {
+    font-size: 12px; }
+
+  .products_inside_container .inside_product_info .inside_product_tittle_rating span {
+    font-size: 22px; }
+
+  .products_inside_container .inside_product_information h3 {
+    font-size: 12px; }
+
+  .products_inside_container .inside_product_information p {
+    font-size: 13px; }
+
+  .products_inside_container .inside_product_information a {
+    font-size: 13px; }
+
+  .products_main_info_container .products_main_info_row {
+    padding: 45px 20px;
+    animation: prInside .8s; }
+
+  .products_main_info_container .products_main_info_tabs .tabs_info h4 {
+    font-size: 10.5px; }
+
+  .products_main_info_container .main_info_tables .table_header h4 {
+    font-size: 10px; }
+
+  .products_main_info_container .main_info_tables .table_box .table_content .food_species span {
+    font-size: 9.6px; }
+
+  #exampleModal .model_tittle h2 {
+    font-size: 30px; }
+
+  #exampleModal .model_tittle {
+    max-width: 216px; }
+
+  #exampleModal .model_tittle h2 {
+    padding-left: 7px; }
+
+  #exampleModal .modal_form form input {
+    padding: 12px 20px;
+    font-size: 11px; }
+
+  #exampleModal .modal_form form textarea {
+    font-size: 11px; }
+
+  #exampleModal .modal_form form button {
+    font-size: 13px; } }
 .services_fluid {
   background-image: url("../images/Asset 1.png");
   height: 60vh;
@@ -1612,5 +2034,35 @@ a:hover {
 
 .service_wrapp:last-child {
   display: none; }
+
+/*// responsive  */
+@media only screen and (max-width: 1500px) {
+  .service_fix_icons {
+    right: -4vw; }
+
+  .service_fluid .service_container .service_tittle h2 {
+    font-size: 28px; }
+
+  .service_fix_icons .service_icon h2 {
+    font-size: 16px; }
+
+  .service_fix_icons .service_icon img {
+    width: 40px; }
+
+  .service_fix_icons {
+    right: -1vw; } }
+@media only screen and (max-width: 1024px) {
+  .service_fluid .service_container .service_tittle h2 {
+    font-size: 28px; }
+
+  .service_fluid .service_text_box p {
+    font-size: 13px;
+    margin-bottom: 20px; }
+
+  .service_fix_icons .service_icon img {
+    width: 40px; }
+
+  .service_fix_icons .service_icon h2 {
+    font-size: 13px; } }
 
 /*# sourceMappingURL=main.css.map */

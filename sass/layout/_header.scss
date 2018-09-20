@@ -131,3 +131,47 @@
 
 
 }
+
+
+/*// responsive*/
+
+
+
+@media only screen and (max-width: 1500px) {
+	
+.header_fluid .header_nav {
+    width: 95%;
+}
+
+.header_fluid .header_nav ul a {
+    font-size: 25px; 
+}
+
+.header_fluid .header_language_search_box .header_language_box span {
+    font-size: 23px;
+   
+}
+
+.header_fluid {
+    padding: 0 20px;
+}
+
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+	
+.header_fluid .header_logo a img {
+    width: 120px;
+  
+}
+.header_fluid .header_nav ul a {
+    font-size: 21px;
+}
+.header_fluid .header_language_search_box .header_language_box span {
+    font-size: 20px;
+}
+
+
+}

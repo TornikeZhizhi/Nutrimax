@@ -280,3 +280,94 @@
 
 		}
 }
+
+
+/*// about responsive*/
+
+
+
+
+@media only screen and (max-width: 1024px) {
+	
+.about_fluid .about_container .about_tittle h2 {
+    font-size: 30px;
+}
+
+.about_fluid .about_container .mission_box p {
+    font-size: 13px;
+}
+.about_fluid .about_container .mission_box {
+    border-right: 3px solid #8C8934;
+    padding: 41px 20px;
+}
+
+.about_fluid .about_container .mission_img_box h3 {
+    font-size: 31px;
+
+}
+
+.about_fluid .about_container .mission_img_box {
+    
+     img {
+     	width: 100px;
+     }
+}
+.about_fluid .about_container .mission_img_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.about_fluid .about_container > .row:not(:first-child) {
+    padding: 160px 0;
+}
+
+.about_fluid .about_container .about_inside_about p {
+    font-size: 13px;
+    font-family: 'Conv_BPG_Tahoma_Glaho';
+    color: #000D20;
+}
+
+.about_fluid .about_container .about_partners_box p {
+    color: #000D20;
+    font-size: 13px;
+    font-family: 'Conv_BPG_Tahoma_Glaho';
+}
+
+.about_fluid .about_container .about_knowhow_text p {
+    color: #000D20;
+    font-size: 13px;
+    font-family: 'Conv_BPG_Tahoma_Glaho';
+}
+.about_fluid .about_container .about_quality_text p {
+    color: #000D20;
+    font-size: 13px;
+    font-family: 'Conv_BPG_Tahoma_Glaho';
+}
+.about_fluid .about_container .about_news_text p {
+    font-size: 13px;
+    color: #000D20;
+    font-family: 'Conv_BPG_Tahoma_Glaho';
+}
+
+.about_container .row h3 {
+	font-size: 31px !important;
+}
+.about_container .row img {
+	width: 100px !important;
+}
+.about_fluid .about_container .about_partners_box {
+
+    padding: 30px 20px;
+}
+
+.about_fluid .about_container .about_qualiti_tittle img {
+     padding-left: 0px; 
+}
+.about_fluid .about_container .about_news_tittle {
+    height: 100%;
+    justify-content: center;
+}
+
+}

@@ -96,5 +96,57 @@
 
  .service_wrapp:last-child {
  	display:none;
- } 
+ }
 
+
+
+
+/*// responsive  */
+
+
+@media only screen and (max-width: 1500px) {
+	
+	.service_fix_icons {
+    	right: -4vw;
+	}
+	.service_fluid .service_container .service_tittle h2 {
+    
+    font-size: 28px;
+    
+}
+
+.service_fix_icons .service_icon h2 {
+   
+    font-size: 16px;
+    
+}
+.service_fix_icons .service_icon img {
+    width: 40px;
+}
+.service_fix_icons {
+    right: -1vw;
+}
+
+}
+
+
+@media only screen and (max-width: 1024px) {
+	.service_fluid .service_container .service_tittle h2 {
+    
+    font-size: 28px;
+   
+}
+.service_fluid .service_text_box p {
+    
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.service_fix_icons .service_icon img {
+    width: 40px;
+}
+.service_fix_icons .service_icon h2 {
+    
+    font-size: 13px;
+    
+}
+}
