@@ -333,6 +333,11 @@
 
 		.foot_content_box {
 			height: 100%;
+			    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid #000;
 		}
 
 		.products_tittle {
@@ -355,7 +360,7 @@
 
 
 				.food_content {
-					border-right:1px solid #000;
+					
 					border-bottom:1px solid #000;
 				
 				}
@@ -431,23 +436,50 @@
 
 			.products_main_info_tabs {
 
-				border-bottom: 1px solid #D1D3D4;
+				/*border-bottom: 1px solid #D1D3D4;*/
 				display: flex;
 			    justify-content: space-between;
 			    align-items: center;
-			        padding: 10px 46px;
+			     padding: 10px 46px;
+			     position: relative;
+
+
+			     &:after {
+
+			     	position:absolute;
+			     	content: "";
+			     	width: 100%;
+			     	height: 2px;
+			     	background-color: #D1D3D4;
+			     	top: 45px;
+			     	left: 0;
+
+			     }
 
 
 				.tabs_info {
 
 					cursor:pointer;
 
+						
+
 					 h4 {
 
 					 	color: #493728;
 					 	font-size: 18px;
 					 	font-family: 'Conv_bpg_mrgvlovani_2009';
+					 	opacity: .5;
+					 	border-bottom: 2px solid transparent;
+					 	padding-bottom: 14px;
 					 }
+
+
+					&.active h4 {
+						opacity: 1;
+						border-bottom: 2px solid #493728;
+					}
+
+
 				}
 
 			}
@@ -663,6 +695,33 @@
 		 		}
 		 }
 	}
+}
+
+.img_zoom_container {
+
+		.imgBox {
+
+			width: 100%;
+			height: 100%;
+
+			&:nth-child(2){
+				width: 50px !important;
+				height: 50px !important;
+			}
+
+			 img {
+			 	width: 100%;
+			 	height: 100%;
+			 	object-fit: cover;
+			 }
+		}
+
+		.imgBox:nth-child(2){
+				width: 50px !important;
+				height: 50px !important;
+			}
+
+
 }
 
 

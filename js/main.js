@@ -15,6 +15,9 @@ $('.news_slide').owlCarousel({
             items:2
         },
         992:{
+            items:2
+        },
+        1200:{
             items:3
         }
     }
@@ -131,9 +134,9 @@ $(document).ready(function() {
         $(this).parent().find(".table_content").slideToggle();
     })
 
-    $(".product_box img").on("click",function(){
-       location.assign("products_inside.html");
-    })
+    // $(".product_add_basket img").on("click",function(){
+    //    location.assign("products_inside.html");
+    // })
 
 })
 
@@ -166,11 +169,26 @@ $(document).ready(function() {
     $(".tabs_info").each(function(index){
 
         $(this).on("click",function(){
+
              $(".products_main_info_row").css("display","none");
-             $(".products_main_info_row").eq(index).css("display","flex") 
+             $(".products_main_info_row").eq(index).css("display","flex");
+
+             $(".tabs_info").removeClass("active");
+             $(this).addClass("active");
+
+
+
         })
 
     })
+
+
+
+    // $(".tabs_info").on("click",function(){
+
+
+
+    // })
 
 
 })
@@ -186,6 +204,8 @@ $(document).ready(function(){
 
             $(".service_wrapp").css("display","none"); 
            $(".service_wrapp").eq(index).css("display","block"); 
+
+          
 
         })
     })
@@ -249,5 +269,10 @@ $(".diler_up_box").on("click",function(){
 })
 
 })
+
+
+
+
+
 
 
