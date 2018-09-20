@@ -38,10 +38,6 @@ a:hover {
   background-color: #F5C400;
   border-radius: 10px; }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #c4a115; }
-
 @font-face {
   font-family: 'Conv_gl-gordeziani-medium';
   src: url("../fonts/gl-gordeziani-medium.eot");
