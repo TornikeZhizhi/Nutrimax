@@ -1573,7 +1573,7 @@ a:hover {
 
   .footer_fluid .footer_container .footer_icons a {
     padding-left: 10px; } }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   .header_nav_col {
     display: none; }
 
