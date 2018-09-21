@@ -9,6 +9,11 @@
 
 				
 	}
+	.farmer_info_fluid {
+		background-image: url("../images/about_bg.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 
 
 
@@ -87,7 +92,7 @@
 							color: #493728;
 							font-family: 'Conv_bpg_mrgvlovani_2009';
 							font-size: 13px;
-							    margin-top: 40px;
+							margin-top: 25px;
 
 
 						}
@@ -191,8 +196,20 @@
 
 	.farmers_inside_fluid .farmers_inside_main {
 	    width: 70vw;
-	    
+	    height: 65%;
+	    overflow-y: scroll;
 	}
+
+	.farmers_inside_fluid .farmers_inside_main::-webkit-scrollbar {
+    width: 8px;
+	}
+	
+	.farmers_inside_fluid .farmers_inside_main::-webkit-scrollbar-thumb {
+    background: #F5C400; 
+    border-radius: 5px;
+}
+		
+
 	.farmers_inside_fluid .farmers_inside_main .ingredients_text p {
     font-size: 12px;
     color: #493728;

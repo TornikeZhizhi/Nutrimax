@@ -208,21 +208,34 @@
 								    	left: 0;
 								    	z-index: 10;
 								    	background-color: #493728;
-								    	width: 100%;
-								    	height: 30px;
+								    	width: 100%;								    	
 								    	display: none;
+								    	    height: 33px;
+
+								    	    span {
+								    	    	img {
+								    	    		margin-right: 22px;
+								    	    	}
+								    	    }
+
 
 								    		&>span, div {
-								    			width: 50%;
+								    			width: 35%;
 												display: flex;
 											    align-items: center;
 											    justify-content: center;
 
 								    		}
 
+
+											.add_basket {
+												width: 65%;
+											}
+
+
 								    				img {
 								    					padding:2px;
-								    					width: 24px;
+								    					        width: 25px;
 								    					filter: brightness(0) invert(1);
 
 								    				}
@@ -230,13 +243,14 @@
 								    				.add_basket {
 
 
-								    					 span  {
-								    					 	font-size: 16px;
+								    					 span  {								    					 
 								    					 	font-family: 'Conv_gl-gordeziani-medium';
 								    					 	color: #fff;
 								    					 	padding-left: 5px;
 														    margin-bottom: -3px;
 														    display: inline-block;
+														    font-size: 20px;
+														        padding-right: 13px;
 								    					 	
 								    					 }
 								    				}
@@ -337,7 +351,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-right: 1px solid #000;
+    border-right: 1px solid #D1D3D4;;
+
+
 		}
 
 		.products_tittle {
@@ -361,8 +377,14 @@
 
 				.food_content {
 					
-					border-bottom:1px solid #000;
+					border-bottom:1px solid #D1D3D4;
 				
+				}
+
+
+				.food_content:last-child {
+					border-bottom: none;
+
 				}
 
 
@@ -414,12 +436,12 @@
 
 				  a {
 				  	display: inline-block;
-				  	background-color: #23170E;
+				  	background-color: #F5C400;
 				  	color: #fff;
 				  	padding: 7px 15px;
 				  	font-family: 'Conv_bpg_mrgvlovani_2009';
 				  	font-size: 18px;
-				  	border-radius: 5px;
+				  border-radius: 30px;
 				  }
 			}
 
@@ -655,9 +677,11 @@
 		 			border:none;
 		 			outline: none;
 		 			border-radius: 5px;
-		 			    padding: 15px 20px;
-		 			    font-size: 13px;
-		 			    font-family: 'Conv_bpg_mrgvlovani_caps_2010';
+		 			 padding: 15px 20px;
+		 			 font-size: 13px;
+		 			 width: 100%;
+					 font-family: 'Conv_bpg_mrgvlovani_caps_2010';
+					 margin-bottom: 15px;
 
 
 		 			&::placeholder {
@@ -675,7 +699,8 @@
 		 			border-radius: 5px;
 		 			font-family: 'Conv_bpg_mrgvlovani_caps_2010';
 		 			font-size: 13px;
-		 			    padding: 15px 20px;
+		 			padding: 15px 20px;
+		 			 width: 100%;
 
 		 			&::placeholder {
 		 				color:#F5C400;
@@ -741,6 +766,114 @@
 		opacity: 1;
 	}
 
+}
+
+
+.basket_fluid {
+			
+			.basket_row {
+				margin-top: 20px;
+			}
+
+	height: 100vh;
+	    position: relative;
+    background-image: url(../images/about_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    .basket_tittle {
+
+    	    border-left: 3px solid #F5C400;
+		    padding: 0 5px;
+		    background-image: url(../images/tittle_bord.png);
+		    background-repeat: no-repeat;
+		    background-position: right bottom;
+		    margin-bottom: 50px;	
+
+    	 h2 {
+    	 	color: #493728;
+		    font-size: 40px;
+		    font-family: 'Conv_gl-gordeziani-medium';
+    	 }
+    }
+
+
+    .basket_content_container {
+			display: flex;
+	
+
+		
+
+		.basket_right_info {
+
+			 border: 1px solid #493728;
+			 width: 100%;
+				
+			.basket_right_up>div {
+				flex: 0 0 25%;
+				text-align: center;
+				padding: 10px 0;
+			}	
+
+			 .basket_right_up {
+				height: 35%;
+			 	display: flex;
+
+
+
+			 		span {
+			 			color: #8C8934;
+			 			font-family: 'Conv_bpg_mrgvlovani_caps_2010';
+			 			font-size: 13px;
+			 			font-weight: bold;
+			 		}
+			 }
+
+			 .basket_right_down>div {
+			 	flex: 0 0 25%;
+				text-align: center;
+				padding: 10px 0;
+				display: flex;
+			    align-items: center;
+			    justify-content: center;
+			 }
+
+			 .basket_right_down {
+			 	display: flex;
+			 	height: 65%;
+			 	border-top: 1px solid #493728;
+
+			 	 span {
+			 	 	color: #F5C400;
+			 	 	font-size: 12px;
+			 	 		font-family: 'Conv_bpg_mrgvlovani_caps_2010';
+			 	 }
+			 }
+		}	
+	
+    	.basket_content_img {
+
+    		border: 1px solid #493728;
+    		max-width: 160px;
+    		border: 1px solid #493728;
+		    max-width: 160px;
+		    border-right: none;
+
+
+    		 img {
+    		 	object-fit: contain;
+    		 	width: 100%;
+    		 	min-height: 130px;
+    		 }
+    	}
+    }
+}
+
+.img_zoom_container {
+	height: 500px;
+	
+	background-color: #faebd78a;
 }
 
 

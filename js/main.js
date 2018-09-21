@@ -25,14 +25,14 @@ $('.news_slide').owlCarousel({
 
 $('.partners_slide').owlCarousel({
     loop:true,
-    autoplay:true,
+    // autoplay:true,
     autoplayTimeout:2000,
     autoplayHoverPause:true,
     margin:10,
     nav:true,
     responsive:{
         0:{
-            items:1
+            items:2
         },
         600:{
             items:3
@@ -134,9 +134,9 @@ $(document).ready(function() {
         $(this).parent().find(".table_content").slideToggle();
     })
 
-    // $(".product_add_basket img").on("click",function(){
-    //    location.assign("products_inside.html");
-    // })
+    $(".add_basket").on("click",function(){
+       location.assign("basket.html");
+    })
 
 })
 
@@ -269,6 +269,29 @@ $(".diler_up_box").on("click",function(){
 })
 
 })
+
+
+
+//responsive menu
+
+
+$(document).ready(function(){
+
+    $(".hamburger_box").on("click",function(){
+       $(".resp_navigation_fluid").addClass("active") 
+    })
+
+
+    $(".close_icon").on("click",function(){
+
+           $(".resp_navigation_fluid").removeClass("active") 
+
+    })
+
+})
+
+
+
 
 
 
