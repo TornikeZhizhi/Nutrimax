@@ -1619,7 +1619,16 @@ a:hover {
     font-size: 21px; }
 
   .home_partner_fluid .home_partner_container .item {
-    justify-content: center; } }
+    justify-content: center; }
+
+  .home_services_fluid .home_services_content_container .services_tittle {
+    margin: 35px 0; }
+
+  .home_services_fluid {
+    padding-bottom: 20px; }
+
+  .home_services_fluid .home_services_content_container .laboratory_content {
+    margin: 50px 0; } }
 @media only screen and (max-width: 576px) {
   .home_main_fluid .home_tittle_box h1 {
     font-size: 23px; }
@@ -1694,7 +1703,13 @@ a:hover {
     display: flex; }
 
   .home_partner_fluid .home_partners_tittle h2 {
-    font-size: 25px; } }
+    font-size: 25px; }
+
+  .home_services_fluid .home_services_content_container .laboratory_content {
+    margin: 30px 0; }
+
+  .home_news_fluid {
+    padding: 50px 15px; } }
 @media only screen and (max-width: 375px) {
   .home_main_fluid .home_tittle_box h1 {
     font-size: 20px; }
@@ -1719,7 +1734,30 @@ a:hover {
     padding-right: 0px; }
 
   .home_products_fluid .home_product_container .products_content a {
-    height: 165px; } }
+    height: 165px; }
+
+  .home_news_fluid .home_news_container .news_box .news_img_box {
+    max-height: 205px; }
+
+  .home_news_fluid .home_news_container .news_box .news_info_box .news_info_text h3 {
+    font-size: 17px; }
+
+  .home_news_fluid .home_news_container .news_box .news_info_box .news_info_text p {
+    font-size: 10px;
+    margin-bottom: 5px; }
+
+  .home_news_fluid .home_news_container .news_box .news_info_box a {
+    font-size: 16px; }
+
+  .home_news_fluid .home_news_container .news_box .news_info_box .news_info_text {
+    height: 88%; }
+
+  .home_news_fluid .home_news_container .news_box .news_info_box {
+    padding: 10px 9px 8px;
+    max-height: 205px; } }
+@media only screen and (max-width: 335px) {
+  .home_news_fluid .home_news_container .news_box .news_info_box .news_info_text p {
+    font-size: 9px; } }
 @media (min-width: 576px) {
   .home_product_container {
     max-width: 1104px; } }
