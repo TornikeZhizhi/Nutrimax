@@ -12,7 +12,9 @@
 	z-index: 1;
 
 
+
 		.about_content_tabs_tittle{
+			margin-bottom: 10px;
 
 			h4 {
 				color: #8D6A29;
@@ -23,8 +25,20 @@
 
 		.about_content_tabs {
 
+			&.active {
+
+				// transform: scale(1.3);
+
+				img {
+					transition: .4s;
+					transform: scale(1.5);
+				}
+				
+
+			}
+
 			&:not(:last-child){
-				margin-bottom: 10px;
+				margin-bottom: 20px;
 			}
 
 			a {
@@ -32,6 +46,7 @@
 				text-align: center;
 					img {
 
+						width:50px;
 					}
 			}
 		}

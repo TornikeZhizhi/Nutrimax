@@ -25,7 +25,7 @@ $('.news_slide').owlCarousel({
 
 $('.partners_slide').owlCarousel({
     loop:true,
-    // autoplay:true,
+    autoplay:true,
     autoplayTimeout:2000,
     autoplayHoverPause:true,
     margin:10,
@@ -100,6 +100,24 @@ $(document).ready(function() {
     e.preventDefault();
   });
 });
+
+
+$(document).ready(function(){
+   $(".about_content_tabs").each(function(index){
+        $(this).on("click",function(){
+            var leng = $(".about_content_tabs").length 
+            $(".about_content_tabs").removeClass("active");
+            for (var i = 0; i < leng; i++) {
+             $(".about_content_tabs").eq(i).find("img").attr("src","images/ab_icon"+ i +".svg") 
+            }
+            $(this).find("img").attr("src","images/icon"+ index +".svg");
+            $(this).addClass("active");
+        })
+   }) 
+})
+
+
+
 
 
 
