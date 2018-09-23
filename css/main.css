@@ -2166,7 +2166,9 @@ a:hover {
       top: 45px;
       left: 0; }
     .products_main_info_container .products_main_info_tabs .tabs_info {
-      cursor: pointer; }
+      cursor: pointer;
+      position: relative;
+      z-index: 100; }
       .products_main_info_container .products_main_info_tabs .tabs_info h4 {
         color: #493728;
         font-size: 18px;

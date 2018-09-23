@@ -174,7 +174,7 @@ $(document).ready(function() {
     })
 
      $(".advice_main_info_box").mouseleave(function(){
-           $(this).find(".advice_info_box").slideUp()
+           $(this).find(".advice_info_box").slideUp(150)
            $(this).find(".advice_tex_box").css("background","#fff")
     })
 
