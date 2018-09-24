@@ -6,8 +6,8 @@
    	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
    	 	 <link rel="icon" href="images/tab_logo.jpg">
 
- <link rel="stylesheet" href="assets/css/docs.theme.min.css">
-    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
+<!--  <link rel="stylesheet" href="assets/css/docs.theme.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css"> -->
  
    	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -187,16 +187,20 @@
 
 					</div>
 
+					
 					 <script type="text/javascript">
+
+		$(window).on("load", function(){
+
+    if ($(window).width() > 990 ) {
+
         $('.imgBox').imgZoom({
             boxWidth: 400,
             boxHeight: 400,
             marginLeft: 5,
             origin: 'data-origin'
         });
-    </script>
-    
-    <script type="text/javascript">
+  
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-36251023-1']);
@@ -208,6 +212,9 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
+
+    }
+})
 
 </script>
 
@@ -2151,7 +2158,7 @@
 
 
 
-<!-- <script src="assets/owlcarousel/owl.carousel.js"></script> -->
+<script src="assets/owlcarousel/owl.carousel.js"></script>
 <script src="js/bootstrap.bundle.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/main.js"></script>
