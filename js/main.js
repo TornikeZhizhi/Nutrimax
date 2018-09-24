@@ -25,7 +25,7 @@ $('.news_slide').owlCarousel({
 
 $('.partners_slide').owlCarousel({
     loop:true,
-    // autoplay:true,
+    autoplay:true,
     autoplayTimeout:2000,
     autoplayHoverPause:true,
     margin:10,
