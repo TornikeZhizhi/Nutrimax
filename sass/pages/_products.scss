@@ -382,6 +382,14 @@
 				.food_content {
 					
 					border-bottom:1px solid #D1D3D4;
+					display: flex;
+				    align-items: center;
+				    justify-content: center;
+				        height: 100%;
+
+					 img {
+					 	width: 200px;
+					 }
 				
 				}
 
@@ -904,24 +912,13 @@
     left: -28px;
     height: 15px;
     width: 15px;
-    border: 1px solid #493728;
+    border: 1px solid #F5C400;
     background-repeat: no-repeat;
     background-size: 70% 80%;
     background-position: center center;
+    background-color: #fff;
 }
-.animals_tab_panel_resp label span:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    /* border: solid white; */
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    content: "";
-    position: absolute;
-}
+
 
 .animals_tab_panel_resp ul {
 	display: none;
@@ -935,6 +932,20 @@
 .animals_tab_panel_resp input:checked ~ ul{
 	display:block;
 	}
+.tabs_info_fluid {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.tabs_active_info {
+	display: none;
+}
+.tabs_info_wrapper {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
 
 
 /*// responsive*/
@@ -987,6 +998,11 @@
 	padding-left: 5px;
 	padding-right: 5px;
 }
+.products_main_info_container .products_main_info_tabs:after {
+
+    top: 40px;
+    
+}
 
 
 }
@@ -1020,6 +1036,9 @@
 }
 
 
+.products_main_info_container .products_main_info_tabs:after {
+    top: 38px;
+}
 
 
 }
@@ -1172,12 +1191,33 @@
 
 @media only screen and (max-width: 992px)  {
 
+
+.products_fluid .products_container .products_tittle {
+
+    margin: 30px;
+}
+.products_main_info_container {
+    margin-top: 50px;
+    position: relative;
+}
+
+
 .animals_tab_panel_full {
 	display: none;
 }
+.products_inside_container .inside_product_info .inside_product_tittle_rating {
+    margin-bottom: 15px;
+}
+.products_inside_container .inside_product_information p {
+
+    margin-top: 17px;
+    margin-bottom: 25px;
+}
 
 .animals_tab_panel_resp {
-	display: block;
+	    display: none;
+    margin-top: 20px;
+    margin-left: 26px;
 }
 
 .main_products_menu_col {
@@ -1189,6 +1229,148 @@
 }
 .row_wrapper .col-6 {
 	margin-bottom: 10px;
+}
+
+.producs_price_box {
+	position: relative;
+
+}
+
+.animals_tab_panel_container {
+  position: absolute;
+    top: 11px;
+    left: -41px;
+    z-index: 100;
+    background-color: #F5C400;
+        padding: 10px 5px 10px 40px;
+        width: 200px;
+    border-radius: 15px;
+}
+.animals_tab_panel_resp  ul li{
+	
+		font-size: 10px;
+		color: #493728;
+}
+.animals_tab_panel_resp  label{
+	
+		color: #493728;
+}
+.products_fluid .products_container .main_products_row .producs_price_box {
+ 
+    padding: 10px 20px;
+}
+.animal_tab_pannel_tittle{
+
+	 h3 {
+	 	font-size: 14px;
+	 	font-family: 'Conv_bpg_mrgvlovani_caps_2010';
+	 	color: #fff;
+		position: relative;
+
+					&:after {
+						position: absolute;
+					    content: "";
+					    width: 0;
+					    height: 0;
+					    top: 2px;
+					    left: 105px;
+					    border-top: 5px solid transparent;
+					    border-left: 10px solid #fff;
+					    border-bottom: 5px solid transparent;
+
+					}
+
+	 }
+}
+
+.animals_tab_panel_resp input:checked ~ .checkmark{
+			background-image: url("../images/resp_pr_bg.png");
+			border:1px solid #F5C400;						
+			}
+
+.products_inside_container {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.products_inside_container .inside_product_info {
+    padding: 30px 0px;
+}			
+.products_main_info_container .products_main_info_row {
+    padding: 25px 0px;
+   
+}
+
+.tabs_info_fluid {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(35, 23, 14, .95);
+}
+.products_main_info_container .products_main_info_tabs .tabs_info.active h4 {
+    opacity: 1;
+    border-bottom: unset;
+}
+.products_main_info_container .products_main_info_tabs:after {
+   
+    content: unset;
+}
+
+.tabs_active_info {
+	display: block;
+	padding:15px 20px;
+	width: 100%;
+    text-align: center;
+   font-size: 17px;
+    font-family: 'Conv_bpg_mrgvlovani_caps_2010';
+    color: #fff;
+}
+
+.tabs_active_info {
+	 h4 {
+	 	font-size: 17px;
+	 	font-family: 'Conv_bpg_mrgvlovani_caps_2010';
+	 	color: #fff;
+	 }
+}
+
+.products_main_info_container .products_main_info_tabs .tabs_info h4 {
+    color: #fff;
+   
+}
+.products_main_info_container .products_main_info_tabs .tabs_info {
+ 
+    margin-bottom: 5px;
+}
+.products_main_info_tabs {
+	position: absolute !important;
+    top: -45px;
+    left: -15px;
+    width: 103.5%;
+    z-index: 200;
+}
+.tabs_info_wrapper {
+	display: none;
+	text-align: center;
+}
+.products_main_info_container .products_main_info_tabs {
+    padding: 0px 0px;
+}
+
+.products_main_info_container .product_main_info_down {
+    margin-top: 30px;
+}
+
+.main_info_tables {
+	margin-top: 20px;
+}
+.products_main_info_row {
+	
+	.col-lg-7, .col-lg-5 {
+		 padding-right: 0px;
+		 padding-left: 0px;
+	}
 }
 
 }
@@ -1204,6 +1386,14 @@
 	padding-left: 5px;
 	padding-right: 5px;
 }
+.products_inside_container .food_content img {
+    width: 150px;
+}
+
+.img_zoom_container {
+    height: 410px;
+  
+}
 
 }
 
@@ -1214,6 +1404,35 @@
 	    
 	    width: 145px;
 	}
+
+	.products_fluid .products_container .main_products_row .producs_price_box {
+    padding: 10px 0px;
+}
+
+.animals_tab_panel_container {
+  
+    width: 175px;
+   
+}
+
+.img_zoom_container {
+    height: 370px;
+}
+.products_inside_container .food_content img {
+    width: 130px;
+}
+.tabs_active_info {
+
+    font-size: 15px;
+   
+}
+.products_main_info_tabs {
+ 
+    width: 107.5%;
+   
+}
+
+
 }
 
 @media only screen and (max-width: 500px)  {
@@ -1243,6 +1462,62 @@
 .products_fluid .products_container .main_products_row .row_wrapper .product_content .product_box .star_price_box div img, .products_fluid .products_container .main_products_row .row_wrapper .product_content .product_box .star_price_box span img {
   
     width: 50px;
+}
+
+}
+
+
+
+@media only screen and (max-width: 390px)  {
+	
+	.animal_tab_pannel_tittle h3 {
+    font-size: 12px;
+
+}
+.animals_tab_panel_container {
+   
+    padding: 7px 4px 7px 40px;
+   
+}
+.animals_tab_panel_resp label {
+   
+    font-size: 10px;
+    
+}
+
+.products_fluid .products_container .main_products_row .producs_price_box select {
+    width: 95px;
+    font-size: 9px;
+    
+}
+.producst_main_col {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.animal_tab_pannel_tittle h3:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 3px;
+    left: 92px;
+    border-top: 3px solid transparent;
+    border-left: 8px solid #fff;
+    border-bottom: 3px solid transparent;
+}
+.animals_tab_panel_container {
+    width: 163px;
+}
+.animals_tab_panel_container {
+  
+    left: -33px;
+}
+
+.img_zoom_container {
+    height: 240px;
+}
+.products_inside_container .food_content img {
+    width: 70px;
 }
 
 }

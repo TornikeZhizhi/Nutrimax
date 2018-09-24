@@ -159,6 +159,36 @@ $(document).ready(function() {
 })
 
 
+// products_responsive
+
+$(window).on("load", function(){
+
+    if ($(window).width() <= 991 ) {
+
+        $(document).ready(function(){
+             $(".animal_tab_pannel_tittle").on("click",function(){
+                 $(".animals_tab_panel_resp").slideToggle()
+             })
+
+             $(".tabs_active_info").on("click",function(){
+            $(".tabs_info_wrapper").slideToggle();
+    })
+
+
+        $(".tabs_info").on("click",function(){
+            var text =  $(this).text()
+               $(".tabs_active_info").text(text);
+               $(".tabs_info_wrapper").slideUp();
+       
+            })
+        })
+    }
+})
+
+
+
+
+// products_inside_responsive
 
 
 
