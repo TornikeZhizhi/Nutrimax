@@ -196,8 +196,8 @@
 
 	.farmers_inside_fluid .farmers_inside_main {
 	    width: 70vw;
-	    height: 65%;
-	    overflow-y: scroll;
+	  
+	   
 	}
 
 	.farmers_inside_fluid .farmers_inside_main::-webkit-scrollbar {
@@ -257,12 +257,64 @@
     
 }
 .farmers_inside_fluid .farmers_inside_main {
-    width: 55%;
-    margin: 55px auto 0;
+    width: 85%;
+    margin: 55px auto;
     padding: 30px 21px 10px 31px;
     position: relative;
     overflow: hidden;
     z-index: 100;
 }
+.farmers_inside_fluid {
+  
+     height: unset; 
+   
+}
 	
 } 
+
+
+
+
+@media only screen and (max-width: 576px){
+
+	.farmers_container .farmers_main_tittle h2 {
+    font-size: 25px;
+}
+.farmers_container .advice_container .advice_tex_box {
+
+    padding: 14px 0px;
+}
+
+.farmers_container .advice_container .advice_tex_box h3 {
+    font-size: 20px;
+}
+.farmers_container .advice_container .advice_tex_box .advice_info_box {
+
+    padding: 0px 10px;
+}
+.farmers_container .advice_container .advice_tex_box p {
+
+    font-size: 11px;
+   
+}
+
+.farmers_container .advice_container .advice_tex_box .farmers_link a {
+  
+    padding: 7px 15px;
+    font-size: 14px;
+}
+.farmers_inside_fluid .farmers_inside_main .ingredients_title h2 {
+    font-size: 22px;
+}
+
+.farmers_inside_fluid .farmers_inside_main .ingredients_text p {
+   
+    margin-bottom: 15px;
+}
+.farmers_inside_fluid .farmers_inside_main {
+    width: 95%;
+    margin: 55px auto;
+    padding: 25px 15px 8px 21px;
+}
+
+}

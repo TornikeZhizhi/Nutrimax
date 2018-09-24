@@ -150,3 +150,36 @@
     
 }
 }
+
+
+
+@media only screen and (max-width: 992px) {
+	
+	.service_fix_icons {
+   
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+	.serv_row {
+		justify-content: flex-start !important;
+	}
+	.service_fix_icons {
+    top: -4%;
+	}
+
+
+}
+
+@media only screen and (max-width: 992px) {
+
+
+
+	
+}
+
+
+.service_fluid .service_container .service_tittle h2 {
+    font-size: 25px;
+}

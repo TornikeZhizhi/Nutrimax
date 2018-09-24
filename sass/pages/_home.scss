@@ -469,7 +469,7 @@
 
 .home_partner_fluid {
 
-	padding: 50px 30px;
+	padding: 50px 30px 20px;
 
 		.home_partner_container {
 			max-width: 1000px;
@@ -478,7 +478,7 @@
 			.item {
 				min-height: 150px;
 				display: flex;
-				align-items: flex-end;
+				align-items: center;
 			}
 
 
@@ -493,7 +493,7 @@
 					}
 
 						img {
-							width: 150px;
+							width: 90px;
 							transition: all .4s;
 						}
 				}
