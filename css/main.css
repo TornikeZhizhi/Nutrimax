@@ -1464,6 +1464,8 @@ a:hover {
     .home_products_fluid .home_product_container .products_content {
       margin-bottom: 10px;
       box-shadow: 3px 4px 7px 0px #0000001f; }
+      .home_products_fluid .home_product_container .products_content .fish_img {
+        height: 100px; }
       .home_products_fluid .home_product_container .products_content a {
         font-family: 'Conv_gl-gordeziani-medium';
         display: block;
@@ -2743,7 +2745,13 @@ a:hover {
     font-size: 12px; }
 
   .products_main_info_container .products_main_info_row {
-    padding: 30px 20px; } }
+    padding: 30px 20px; }
+
+  .products_fluid .products_container .main_products_row .row_wrapper {
+    padding: 54px 15px; }
+
+  .products_fluid .products_container .main_products_row .row_wrapper .product_content .product_box {
+    padding: 47px 15px 20px 15px; } }
 @media only screen and (max-width: 1024px) {
   .products_fluid .products_container .main_products_row .main_products_menu_col .animals_tab_panel label {
     font-size: 12px; }
