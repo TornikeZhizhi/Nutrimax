@@ -467,7 +467,13 @@
 
 /*// about responsive*/
 
+@media only screen and (max-width: 1600px) {
+	
+	.about_partners_tittle {
+		padding-right: 5vw;
+	}
 
+}
 
 
 @media only screen and (max-width: 1024px) {
@@ -551,6 +557,144 @@
 .about_fluid .about_container .about_news_tittle {
     height: 100%;
     justify-content: center;
+}
+
+}
+
+
+
+
+@media only screen and (max-width: 992px) {
+
+	.about_fluid .about_container .mission_box {
+   	 border:unset;
+    
+	}
+
+	.about_content_tabs_box .about_content_tabs a img {
+   	 width: 40px;
+	}
+
+	.mission_row {
+		flex-direction: column-reverse;
+	}
+	.about_container .row img {
+    width: 80px !important;
+	}
+
+
+	.about_fluid .about_container .about_inside_about {
+    border:unset;
+	}
+	.about_fluid .about_container .about_partners_box {
+    border-right: unset;
+	}
+
+	.about_partners_row {
+		flex-direction: column-reverse;
+	}
+
+	.about_fluid .about_container .about_partners_tittle {
+ 
+    text-align: center;
+	}
+
+	.about_fluid .about_container .about_knowhow_text {
+    	border-left:unset;
+   		
+	}
+
+	
+	.about_fluid .about_container .about_knowhow_box {
+	 
+	    justify-content: center;
+	    text-align: center;
+	    width: 100%;
+	}
+
+	.about_fluid .about_container .about_quality_text {
+	    border-right: unset;
+	}
+	
+	.about_quality_row {
+		flex-direction: column-reverse;
+	}
+
+
+	.about_fluid .about_container .about_qualiti_tittle {
+	  
+	    align-items: center;
+	  
+	}
+
+	.about_fluid .about_container .about_news_text {
+	    border-left: unset;
+	    padding: 52px 25px;
+	}
+	
+	.about_news_row {
+		justify-content: flex-start !important;
+	}
+
+	.about_fluid .about_container > .row:not(:first-child) {
+    padding: 90px 0;
+	}
+
+
+
+}
+
+
+@media only screen and (max-width: 576px) {
+
+	.about_fluid .about_container .about_inside_about li {
+    font-size: 13px;
+    
+	}
+
+	.about_container .row h3 {
+   	 font-size: 23px !important;
+	}
+
+	.about_content_tabs_box .about_content_tabs a img {
+    	width: 30px;
+	}
+
+	.about_fluid .about_container > .row:not(:first-child) {
+    padding: 50px 0;
+	}
+	.about_fluid .about_container .mission_box {
+    
+    padding: 25px 0px;
+	}
+
+	.about_fluid .about_container .about_inside_about {
+
+    padding: 15px 0px;
+	}
+
+	.about_fluid .about_container .about_partners_box {
+    padding: 30px 0px;
+	}
+
+	.about_fluid .about_container .about_knowhow_text {
+   
+   	 padding: 51px 0px;
+	}
+	
+
+	.about_fluid .about_container .about_quality_text {
+    padding: 30px 27px 0px 0px;
+   
+	}
+	.about_fluid .about_container .about_news_text {
+
+    padding: 52px 0px;
+}
+.about_content_tabs_box {
+  
+    right: 1%;
+   
 }
 
 }

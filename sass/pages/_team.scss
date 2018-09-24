@@ -223,3 +223,97 @@
 }
 
 }
+
+
+@media only screen and (max-width: 1024px) {
+	.our_team_fluid .our_team_container .our_team_box_left .our_team_info {
+   
+   	 padding: 33px 2px 15px 14px;
+	}
+
+	.our_team_fluid .our_team_container .our_team_box_right .our_team_info {
+
+    	 padding: 33px 2px 15px 14px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	
+	.our_team_fluid .our_team_container .our_team_box_right {
+  
+    display: flex;
+	}
+	.our_team_fluid .our_team_container .our_team_box_right .our_team_img {
+   
+     height: 100%; 
+}
+
+.our_team_fluid .our_team_container .our_team_box_right {
+    
+    height: 340px;
+    margin-top: 10px;
+}
+
+}
+
+
+
+@media only screen and (max-width: 576px) {
+	
+	.our_team_fluid .our_team_container .our_team_box_left {
+   
+    height: 240px;
+    
+	}
+	.our_team_fluid .our_team_container .our_team_box_left .our_team_info p {
+    color: #000D20;
+    font-size: 13px;
+   
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.our_team_fluid .our_team_container .our_team_box_right {
+    height: 240px;
+    
+}
+.our_team_fluid .our_team_container .our_team_box_right .our_team_info p {
+   margin-top: 20px;
+    margin-bottom: 20px;
+}
+.our_team_fluid .our_team_container .our_team_box_left .our_team_info {
+    padding: 9px 2px 9px 8px;
+}
+.our_team_fluid .our_team_container .our_team_box_left .our_team_info p {
+   
+    font-size: 12px;
+   
+}
+
+}
+
+@media only screen and (max-width: 425px) {
+
+.our_team_fluid .our_team_container .our_team_box_left .our_team_info {
+    padding: 8px 5px 5px 5px;
+}
+
+.our_team_fluid .our_team_container .our_team_box_left .our_team_info p {
+
+    font-size: 10px;
+    margin-top: 15px;
+       margin-bottom: 4px;
+}
+.our_team_fluid .our_team_container .our_team_box_left {
+    height: 200px;
+}
+.our_team_fluid .our_team_container .our_team_box_right .our_team_info {
+         padding: 14px 2px 15px 5px;
+}
+.our_team_fluid .our_team_container .our_team_box_right .our_team_info p {
+ font-size: 11px;
+    margin-top: 15px;
+        margin-bottom: 4px;
+}
+
+}
