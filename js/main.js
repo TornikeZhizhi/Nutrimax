@@ -84,8 +84,6 @@ $(document).ready(function(){
 
 
 
-
-
 })
 
 
@@ -246,20 +244,19 @@ $(document).ready(function() {
 
              $(".tabs_info").removeClass("active");
              $(this).addClass("active");
-
-
-
-        })
+     })
 
     })
 
 
+    $(".food_content").on("click",function(){
 
-    // $(".tabs_info").on("click",function(){
+        var SR =  $(this).find("img").attr("src");
+        $(".imgBox img").attr("src",SR);
+        $(".imgBox img").attr("data-origin",SR);
+        console.log(SR)
+    })
 
-
-
-    // })
 
 
 })
