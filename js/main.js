@@ -11,7 +11,7 @@ $('.news_slide').owlCarousel({
         0:{
             items:1
         },
-        600:{
+        690:{
             items:2
         },
         992:{
@@ -148,8 +148,29 @@ $(document).ready(function() {
 
 
 $(document).ready(function() {
+
+    $(".table_header").eq(1).parent().find(".table_content").slideUp()
+    $(".table_header").eq(2).parent().find(".table_content").slideUp()
+
+    $(".table_header").eq(4).parent().find(".table_content").slideUp()
+    $(".table_header").eq(5).parent().find(".table_content").slideUp()
+
+    $(".table_header").eq(7).parent().find(".table_content").slideUp()
+    $(".table_header").eq(8).parent().find(".table_content").slideUp()
+
+    $(".table_header").eq(10).parent().find(".table_content").slideUp()
+    $(".table_header").eq(11).parent().find(".table_content").slideUp()
+
+    $(".table_header").eq(13).parent().find(".table_content").slideUp()
+    $(".table_header").eq(14).parent().find(".table_content").slideUp()
+
+    $(".table_header").eq(16).parent().find(".table_content").slideUp()
+    $(".table_header").eq(17).parent().find(".table_content").slideUp()
+
+
     $(".table_header").on("click",function(){
         $(this).parent().find(".table_content").slideToggle();
+        $(this).find("h4").toggleClass("active");
     })
 
     $(".add_basket").on("click",function(){
@@ -184,6 +205,7 @@ $(window).on("load", function(){
         })
     }
 })
+
 
 
 
@@ -335,6 +357,15 @@ $(document).ready(function(){
            $(".resp_navigation_fluid").removeClass("active") 
 
     })
+
+})
+
+
+//products_triangle
+
+$(document).ready(function(){
+
+
 
 })
 

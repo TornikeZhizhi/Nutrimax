@@ -124,6 +124,7 @@
 								    background-repeat: no-repeat;
 								    background-size: 70% 80%;
 								    background-position: center center;
+								    opacity: 0.8;
 
 								    &:after{
 								    	   left: 9px;
@@ -577,17 +578,38 @@
 			.main_info_tables {
 				   
 
+				  
 				    .table_header {
-				    	background-color: #23170E;
-				    padding: 12px;
+
+				 background-color: #23170E;
+				    padding: 8px 40px;
 				    text-align: center;
-				    border-radius: 3px;
+				    border-radius: 5px;
 				    cursor: pointer;
+				    border: 2px solid #23170E;
+				    position: relative;
+
+					    
+		
 
 										h4 {
 										color: #fff;
 										font-family: 'Conv_bpg_mrgvlovani_2009';
 										font-size: 16px;
+										position: relative;
+										display: inline-block;
+
+
+												&:after {
+													    position: absolute;
+													    content: "";
+													        top: 5px;
+													    right: -5%;
+													    clip-path: polygon(0 0, 50% 100%, 100% 0);
+													    background-color: #fff;
+													    width: 11px;
+													    height: 10px;
+												}
 
 									}
 
@@ -955,6 +977,18 @@
 	overflow:hidden;
 }
 
+.table_header h4.active:after{
+
+	transform: rotate(-180deg) !important;
+}
+
+.table_header h4.active:after{
+
+	transform: rotate(-180deg) !important;
+}
+
+
+
 /*// responsive*/
 
 
@@ -1066,6 +1100,29 @@
     font-size: 14px;
 }
 
+.basket_fluid .basket_content_container .basket_right_info .basket_right_down span {
+    
+    font-size: 10px;
+   
+}
+.basket_fluid .basket_content_container .basket_right_info .basket_right_up span {
+  
+    font-size: 8px;
+  
+}
+#exampleModal .model_tittle {
+   
+    max-width: 211px;
+
+}
+
+#exampleModal .model_tittle h2 {
+   
+    font-size: 30px;
+   
+}
+
+
 
 }
 
@@ -1115,6 +1172,7 @@
 .products_fluid .products_container .main_products_row .producs_price_box span {
 
     font-size: 10px;
+    opacity: 0.8;
 }
 .products_fluid .products_container .main_products_row .producs_price_box select {
     width: 125px;
@@ -1209,7 +1267,11 @@
     font-size: 13px;
    
 }
-
+.basket_fluid .basket_tittle h2 {
+  
+   font-size: 30px;
+  
+}
 
 }
 
@@ -1217,6 +1279,59 @@
 
 @media only screen and (max-width: 992px)  {
 
+.product_add_basket {
+    display: flex !important;
+}
+
+.basket_fluid {
+     height: unset; 
+   
+}
+.basket_fluid .basket_row {
+     margin-top: unset; 
+    padding-bottom: 30px;
+}
+
+.basket_fluid .basket_content_container .basket_right_info {
+    display: flex;
+}
+.basket_fluid .basket_content_container .basket_right_info .basket_right_down > div {
+    padding: 0px 0;
+     flex:unset; 
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.basket_fluid .basket_content_container .basket_right_info .basket_right_up > div {
+  
+    padding: 0px 0;
+        flex: 1 0 18%;
+        height: 25px;
+    display: flex;
+    align-items: center;
+}
+.basket_fluid .basket_content_container .basket_content_img img {
+
+    min-height: 95px;
+}
+
+.basket_fluid .basket_content_container .basket_right_info .basket_right_up {
+    height: 100%;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.basket_fluid .basket_content_container .basket_right_info .basket_right_down {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+        width: 50%;
+            justify-content: center;
+     border-top: unset; 
+}
 
 .animal_tab_pannel_tittle {
 	display:block;
@@ -1338,6 +1453,7 @@
     flex-direction: column;
     align-items: center;
     background-color: rgba(35, 23, 14, .95);
+        border-radius: 5px;
 }
 .products_main_info_container .products_main_info_tabs .tabs_info.active h4 {
     opacity: 1;
@@ -1375,10 +1491,10 @@
     margin-bottom: 5px;
 }
 .products_main_info_tabs {
-	position: absolute !important;
+position: absolute !important;
     top: -45px;
-    left: -15px;
-    width: 103.5%;
+    left: 0px;
+    width: 100%;
     z-index: 200;
 }
 .tabs_info_wrapper {
@@ -1425,6 +1541,15 @@
     height: 410px;
   
 }
+#exampleModal .modal-dialog {
+    max-width: 696px;
+    width: 85%;
+    margin: 6.75rem auto;
+}
+#exampleModal .modal_content {
+    width: 80%;
+   
+}
 
 }
 
@@ -1457,10 +1582,34 @@
     font-size: 15px;
    
 }
-.products_main_info_tabs {
- 
-    width: 107.5%;
+
+
+
+#exampleModal .model_tittle h2 {
+    font-size: 20px;
+}
+#exampleModal .modal_content {
+    width: 100%;
+}
+#exampleModal .model_tittle h2 {
+    padding-left: 0px;
+    padding-bottom: 4px;
+}
+#exampleModal .model_tittle {
+    max-width: 140px;
+}
+#exampleModal .modal_form form input {
+    padding: 8px 20px;
+    font-size: 10px;
+}
+#exampleModal .modal_form form textarea {
    
+    height: 85px;
+}
+
+#exampleModal .modal_form form button {
+ 
+    padding: 9px 22px 5px;
 }
 
 
@@ -1501,14 +1650,41 @@
     font-size: 12px;
 }
 
+.products_fluid .products_container .main_products_row .row_wrapper .product_content .product_box .product_add_basket .add_basket span {
+    font-size: 13px;
+    padding-right: 0px;
+}
+.products_fluid .products_container .main_products_row .row_wrapper .product_content .product_box .product_add_basket .add_basket {
+    width: 80%;
+}
+.products_fluid .products_container .main_products_row .row_wrapper .product_content .product_box .product_add_basket > span, .products_fluid .products_container .main_products_row .row_wrapper .product_content .product_box .product_add_basket div {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.products_fluid .products_container .main_products_row .row_wrapper .product_content .product_box .product_add_basket span img {
+     margin-right:0px; 
+}
+.row_wrapper .col-6 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
 }
 
+@media only screen and (max-width: 395px) {
+.products_main_info_container .main_info_tables .table_header h4:after {
 
+    top: 8px;
+    
+}
+
+}
 
 @media only screen and (max-width: 390px)  {
 	
 	.animal_tab_pannel_tittle h3 {
-    font-size: 12px;
+    font-size: 14px;
 
 }
 .animals_tab_panel_container {
@@ -1537,7 +1713,7 @@
     width: 0;
     height: 0;
     top: 3px;
-    left: 92px;
+    left: 101px;
     border-top: 3px solid transparent;
     border-left: 8px solid #fff;
     border-bottom: 3px solid transparent;
