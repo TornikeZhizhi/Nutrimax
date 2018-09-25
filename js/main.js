@@ -6,7 +6,7 @@ $(document).ready(function(){
 $('.news_slide').owlCarousel({
     loop:true,
     margin:15,
-    nav:true,
+    smartSpeed: 900,
     responsive:{
         0:{
             items:1
@@ -28,6 +28,7 @@ $('.partners_slide').owlCarousel({
     autoplay:true,
     autoplayTimeout:2000,
     autoplayHoverPause:true,
+    smartSpeed: 700,
     margin:10,
     nav:true,
     responsive:{
