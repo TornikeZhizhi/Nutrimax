@@ -245,7 +245,7 @@ a:hover {
         color: #fff;
         font-family: 'Conv_bpg_nino_mtavruli_normal';
         margin: 0;
-        width: 120px;
+        width: 145px;
         padding: 4px 7px 0px; }
       .footer_fluid .footer_container .footer_mail_box .footer_send_meil input::placeholder {
         color: #fff; }
@@ -253,11 +253,12 @@ a:hover {
         background-color: transparent;
         border: none;
         outline: none;
-        background-position: 40px center;
+        background-position: 30px center;
         background-image: url(../images/send_btn.png);
         background-repeat: no-repeat;
         border: 2px solid #fff;
-        border-left: none; }
+        border-left: none;
+        width: 40px; }
     .footer_fluid .footer_container .footer_cnt_box {
       display: flex;
       justify-content: center;
@@ -869,6 +870,9 @@ a:hover {
 
   .news_box .news_info_box a {
     font-size: 16px; } }
+@media (min-width: 768px) {
+  .news_in_container {
+    max-width: 1179px !important; } }
 .farmers_fluid {
   background-image: url("../images/Asset 1.png");
   height: 60vh;
