@@ -235,6 +235,29 @@ a:hover {
       border: 2px solid #fff;
       font-family: 'Conv_bpg_nino_mtavruli_normal';
       transition: all .4s; }
+    .footer_fluid .footer_container .footer_mail_box .footer_send_meil {
+      display: flex; }
+      .footer_fluid .footer_container .footer_mail_box .footer_send_meil input {
+        outline: none;
+        background-color: transparent;
+        border: 2px solid #fff;
+        border-right: none;
+        color: #fff;
+        font-family: 'Conv_bpg_nino_mtavruli_normal';
+        margin: 0;
+        width: 120px;
+        padding: 4px 7px 0px; }
+      .footer_fluid .footer_container .footer_mail_box .footer_send_meil input::placeholder {
+        color: #fff; }
+      .footer_fluid .footer_container .footer_mail_box .footer_send_meil button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        background-position: 40px center;
+        background-image: url(../images/send_btn.png);
+        background-repeat: no-repeat;
+        border: 2px solid #fff;
+        border-left: none; }
     .footer_fluid .footer_container .footer_cnt_box {
       display: flex;
       justify-content: center;
@@ -1527,6 +1550,26 @@ a:hover {
           transition: all .4s;
           max-width: 140px; }
 
+.header_seach_box {
+  position: relative; }
+  .header_seach_box .header_form {
+    position: absolute;
+    top: 0px;
+    right: 70%;
+    width: 161px;
+    font-size: 16px;
+    display: none;
+    transition: .4s; }
+    .header_seach_box .header_form.active {
+      display: block; }
+    .header_seach_box .header_form input {
+      font-family: 'Conv_gl-gordeziani-medium';
+      font-size: 16px;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      height: 32px; }
+
 .home_services_fluid {
   background-image: radial-gradient(rgba(18, 19, 35, 0.8), rgba(18, 19, 35, 0.8)), url("../images/service-bg.png");
   background-size: cover;
@@ -1865,8 +1908,21 @@ a:hover {
     font-size: 11px; }
 
   .footer_fluid .footer_container .footer_icons a {
-    padding-left: 10px; } }
+    padding-left: 10px; }
+
+  .footer_fluid .footer_container .footer_mail_box .footer_send_meil input {
+    padding: 4px 7px 0px;
+    font-size: 13px;
+    height: 32px; }
+
+  .footer_fluid .footer_container .footer_mail_box .footer_send_meil button {
+    background-position: 6px center;
+    padding: 14px; } }
 @media only screen and (max-width: 991px) {
+  .header_seach_box .header_form {
+    top: -3px;
+    right: 120%; }
+
   .home_news_fluid {
     padding: 50px 15px; }
 

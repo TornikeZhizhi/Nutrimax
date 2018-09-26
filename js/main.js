@@ -359,12 +359,28 @@ $(document).ready(function(){
 })
 
 
-//products_triangle
+//header form
 
 $(document).ready(function(){
+    $("#header_search").on("click",function(){
+
+        var seo = $("#header_search img").attr("src")
+        console.log(seo)
+        $(".header_form").toggleClass("active");
+
+        if (seo == "images/search.png" ) {
+
+            $("#header_search img").attr("src","images/header_form_x.png")
+
+        }else if (seo == "images/header_form_x.png" ) {
+
+            $("#header_search img").attr("src","images/search.png")
+        }
+
+        //  $("#header_search")   
 
 
-
+    })
 })
 
 

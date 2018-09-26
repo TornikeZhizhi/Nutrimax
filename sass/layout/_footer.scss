@@ -33,6 +33,7 @@
 
 			 	&.footer_address_center {
 			 		justify-content: center;
+
 			 	}
 
 			 	span:first-child{
@@ -102,6 +103,43 @@
 
 					    	
 					}
+					
+					.footer_send_meil {
+
+						display: flex;
+
+						 	 input {
+								
+								outline: none;
+								background-color: transparent;
+								border: 2px solid #fff;
+								border-right: none;
+								color: #fff;
+								font-family: 'Conv_bpg_nino_mtavruli_normal';
+								margin:0;
+								width: 120px;
+								    padding: 4px 7px 0px;
+
+						 	 }
+
+						 	 input::placeholder {
+						 	 	color: #fff;
+						 	 }
+
+
+						 	 button {
+									
+								background-color: transparent;
+								border: none;
+								outline: none;
+								background-position: 40px center;
+								background-image: url(../images/send_btn.png);
+								background-repeat: no-repeat;
+								border: 2px solid #fff;	
+								border-left: none;
+						 	 }
+					}
+
 				}
 
 
